@@ -8,7 +8,7 @@ PROJECT_DIR=${WORKSPACE}/accessibility-assessment
 rm -rf ${PROJECT_DIR}/output/*
 docker rm a11y
 
-docker run --cpus 3  \
+docker run -d --cpus 3  \
     --name a11y \
     -v ${PROJECT_DIR}/output:/home/seluser/output \
     -p 6010:6010 \
