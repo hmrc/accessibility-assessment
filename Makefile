@@ -47,6 +47,10 @@ push_labs: ## Push latest tag to artifactory
 	@docker tag artefacts.tax.service.gov.uk/accessibility-assessment:$$(cat .version) artefacts.tax.service.gov.uk/accessibility-assessment:labs
 	@docker push artefacts.tax.service.gov.uk/accessibility-assessment:labs
 
+push_experimental_tag: ## Push latest experimental tag to artifactory
+	@docker tag artefacts.tax.service.gov.uk/accessibility-assessment:$$(cat .version) artefacts.tax.service.gov.uk/accessibility-assessment:experimental
+	@docker push artefacts.tax.service.gov.uk/accessibility-assessment:experimental
+
 prep_version_incrementor:
 	@echo "Renaming requirements to prevent pipenv trying to convert it"
 	@echo "Installing version-incrementor with pipenv"
