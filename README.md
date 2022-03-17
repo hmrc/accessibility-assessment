@@ -1,5 +1,14 @@
-# Accessibility Assessment Service
-The accessibility assessment service is published as a docker image, and runs as a sidecar container to our jenkins agents.  It exposes a REST API for capturing complete web pages (HTML, js, css) which are then assessed with [axe](https://www.deque.com/axe/) and [Nu HTML Checker](https://validator.github.io/validator/).  The service then creates a [basic HTML report](docs/READING-THE-REPORT.md) of the violations found which is archived in Jenkins, and in our Management instance of Kibana.
+# accessibility-assessment
+The accessibility-assessment tool is published as a docker image, and runs as a sidecar container to our jenkins agents.  It exposes a REST API for capturing complete web pages (HTML, js, css) which are then assessed with [axe](https://www.deque.com/axe/) and [Nu HTML Checker](https://validator.github.io/validator/).  
+The service then creates a [basic HTML report](docs/READING-THE-REPORT.md) of the violations found which is archived in Jenkins, and in our Management instance of Kibana.
+
+### Table of Contents
+* [Accessibility Assessment Service Components](#accessibility-assessment-service-components)
+* [Running accessibility-assessment tests locally](#running-accessibility-assessment-tests-locally)
+* [Building the Image in CI](#building-the-image-in-ci)
+* [Development](#development)
+
+# Accessibility Assessment Service Components
 
 At present the image is made up of the following components:
 - **accessibility-assessment-service**
@@ -322,7 +331,6 @@ The [Makefile](Makefile) at the root of this project is used by Jenkins to build
 
 # Development
 See [DEVELOPMENT.md](DEVELOPMENT.md) for guidelines to make changes to accessibility-assessment. 
-
 
 # License
 This code is open source software licensed under the [Apache 2.0 License]("http://www.apache.org/licenses/LICENSE-2.0.html").
