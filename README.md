@@ -130,7 +130,7 @@ Content-Type: application/json
     "files": { "file1": "some contents" } 
 }
 ```
-_pageURl_: The actual URL of the page under assessment. This is written into a file called `data` which is used in the report.   
+_pageURL_: The actual URL of the page under assessment. This is written into a file called `data` which is used in the report.   
 _pageHTML_: The captured page's HTML which is saved as `index.html`  
 _timestamp_: The time when the page was captured. Used as folder name for each captured paged under which the relevant files are saved.  
 _files_: Assets for the page. No images are captured by the page-capture-chrome-extension.   
