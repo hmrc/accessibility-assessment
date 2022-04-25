@@ -105,7 +105,7 @@ Content-Length →0
 ```
 
 #### POST /api/capture-page
-Used by the [page-capture-chrome-extension](https://github.com/hmrc/remote-webdriver-proxy-scripts/blob/main/page-capture-chrome-extension/content.js)
+Used by the [page-capture-chrome-extension](https://github.com/hmrc/page-capture-chrome-extension/blob/main/page-capture/content.js)
  to post the HTML page and assets (excluding images) for assessment.
  
 ##### Criteria for capturing pages:
