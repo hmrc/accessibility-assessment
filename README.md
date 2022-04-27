@@ -289,7 +289,7 @@ Content-Length →0
 ```
 
 ## page-accessibility-check
-A jar published by [page-accessibility-check](https://github.com/hmrc/page-accessibility-check) which wraps execution of axe
+A jar published by [page-accessibility-check](page-accessibility-check/README.md) which wraps execution of axe
  and vnu assessments against a collection of pages. accessibility-assessment-service triggers this jar to run the assessment
   once pages have been captured.
 

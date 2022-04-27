@@ -38,7 +38,7 @@ const configurations = {
   local: {},
   test: {
     testResourcesDir: `${serviceRoot}/test/resources/`,
-    globalFilterLocation: `${serviceRoot}/test/global-filters.conf`,
+    globalFilterLocation: `${serviceRoot}/test/global-filters.conf`
   }
 }
 

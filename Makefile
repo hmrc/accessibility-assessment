@@ -1,5 +1,7 @@
 SHELL := /usr/bin/env bash
 PYTHON_VERSION := $(shell cat .python-version)
+ACCESSIBILITY_ASSESSMENT_BASE = docker/files/accessibility-assessment
+ACCESSIBILITY_ASSESSMENT_OUTPUT = docker/files/accessibility-assessment/output
 
 .PHONY: check_docker copy_files clean_local build_local run_local stop_local build authenticate_to_artifactory push_image prep_version_incrementor clean help compose
 .DEFAULT_GOAL := help
@@ -10,15 +12,19 @@ copy_files: ## Copies files required for building image
 	@cp -r package-lock.json docker/files/accessibility-assessment-service/package-lock.json
 	@cp -r .npmrc docker/files/accessibility-assessment-service/.npmrc
 
+build_jar_local: ## Build page-accessibility-check fat jar
+	@echo '********** Testing and building page-accessibility-check jar ************'
+	@sbt test
+
 clean_local: stop_local ## Clean up local environment
 	@echo '********** Cleaning local docker environment ************'
 	@docker rmi -f accessibility-assessment:SNAPSHOT
 	@rm -rf docker/files/accessibility-assessment-service
 
-build_local: clean_local copy_files ## Builds the accessibility-assessment image locally
+build_local: clean_local build_jar_local copy_files ## Builds the accessibility-assessment image locally
 	@echo '********** Building docker image for local use ************'
 	@docker build --progress=plain --no-cache --tag accessibility-assessment:SNAPSHOT docker \
- 	|| (echo "Build failed. Removing files used for building"; rm -rf docker/files/accessibility-assessment-service; exit 1)
+ 	|| (echo "Build failed. Removing files used for building"; rm -rf docker/files/accessibility-assessment/accessibility-assessment-service; exit 1)
 	@echo '********** Image Built. Removing files used for building image ************'
 	@rm -rf docker/files/accessibility-assessment-service
 
@@ -34,7 +40,7 @@ build: copy_files prep_version_incrementor ## Build the docker image
 	@echo '********** Building docker image ************'
 	@pipenv run prepare-release
 	@umask 0022
-	@docker build --no-cache --tag artefacts.tax.service.gov.uk/accessibility-assessment:$$(cat .version) docker
+	@docker build --progress=plain --no-cache --tag artefacts.tax.service.gov.uk/accessibility-assessment:$$(cat .version) docker
 
 authenticate_to_artifactory:
 	@docker login --username ${ARTIFACTORY_USERNAME} --password "${ARTIFACTORY_PASSWORD}"  artefacts.tax.service.gov.uk

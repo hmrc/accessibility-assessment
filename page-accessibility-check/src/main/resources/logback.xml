@@ -1,0 +1,17 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="uk.gov.hmrc.play.logging.JsonEncoder"/>
+    </appender>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <!--        &lt;!&ndash; path to your log file, where you want to store logs &ndash;&gt;-->
+        <file>${user.dir}/output/accessibility-assessment-parser.log</file>
+        <append>true</append>
+        <encoder class="uk.gov.hmrc.play.logging.JsonEncoder"/>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="FILE"/>
+        <!--Include the below appender for console output-->
+<!--        <appender-ref ref="CONSOLE"/>-->
+    </root>
+</configuration>
