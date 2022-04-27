@@ -1,0 +1,119 @@
+{
+  "messages": [
+    {
+      "type": "error",
+      "url": "file:/home/seluser/pages/1586243984591/index.html",
+      "lastLine": 1,
+      "lastColumn": 40,
+      "firstColumn": 1,
+      "message": "Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”.",
+      "extract": "<html lang=\"en\" class=\"govuk-template \"><head>",
+      "hiliteStart": 0,
+      "hiliteLength": 40
+    },
+    {
+      "type": "info",
+      "url": "file:/home/seluser/pages/1586243984591/index.html",
+      "lastLine": 1,
+      "lastColumn": 1917,
+      "firstColumn": 1826,
+      "subType": "warning",
+      "message": "The “type” attribute is unnecessary for JavaScript resources.",
+      "extract": "bled\">    <script type=\"text/javascript\" async=\"\" src=\"https://www.google-analytics.com/analytics.js\"></scri",
+      "hiliteStart": 10,
+      "hiliteLength": 92
+    },
+    {
+      "type": "info",
+      "url": "file:/home/seluser/pages/1586243984591/index.html",
+      "lastLine": 1,
+      "lastColumn": 2308,
+      "firstColumn": 2238,
+      "subType": "warning",
+      "message": "The “banner” role is unnecessary for element “header”.",
+      "extract": "          <header class=\"govuk-header \" role=\"banner\" data-module=\"govuk-header\">  <div",
+      "hiliteStart": 10,
+      "hiliteLength": 71
+    },
+    {
+      "type": "error",
+      "url": "file:/home/seluser/pages/1586243984591/index.html",
+      "lastLine": 1,
+      "lastColumn": 4911,
+      "firstColumn": 4770,
+      "message": "Attribute “src” not allowed on element “image” at this point.",
+      "extract": "          <image src=\"/assets/images/govuk-logotype-crown.png\" xlink:href=\"\" class=\"govuk-header__logotype-crown-fallback-image\" width=\"36\" height=\"32\"></imag",
+      "hiliteStart": 10,
+      "hiliteLength": 142
+    },
+    {
+      "type": "info",
+      "url": "file:/home/seluser/pages/1586243984591/index.html",
+      "lastLine": 1,
+      "lastColumn": 6110,
+      "firstColumn": 6015,
+      "subType": "warning",
+      "message": "The “main” role is unnecessary for element “main”.",
+      "extract": "</a>      <main class=\"govuk-main-wrapper govuk-main-wrapper--auto-spacing\" id=\"main-content\" role=\"main\">      ",
+      "hiliteStart": 10,
+      "hiliteLength": 96
+    },
+    {
+      "type": "error",
+      "url": "file:/home/seluser/pages/1586243984591/index.html",
+      "lastLine": 1,
+      "lastColumn": 6748,
+      "firstColumn": 6713,
+      "message": "Element “h1” not allowed as child of element “legend” in this context. (Suppressing further errors from this subtree.)",
+      "extract": "          <h1 class=\"govuk-fieldset__heading\">      ",
+      "hiliteStart": 10,
+      "hiliteLength": 36
+    },
+    {
+      "type": "error",
+      "url": "file:/home/seluser/pages/1586243984591/index.html",
+      "lastLine": 1,
+      "lastColumn": 7237,
+      "firstColumn": 7077,
+      "message": "Attribute “aria-expanded” not allowed on element “input” at this point.",
+      "extract": "          <input class=\"govuk-radios__input\" id=\"createOrAdd\" name=\"createOrAdd\" type=\"radio\" value=\"create\" aria-controls=\"conditional-createOrAdd\" aria-expanded=\"false\">      ",
+      "hiliteStart": 10,
+      "hiliteLength": 161
+    },
+    {
+      "type": "error",
+      "url": "file:/home/seluser/pages/1586243984591/index.html",
+      "lastLine": 1,
+      "lastColumn": 8308,
+      "firstColumn": 8147,
+      "message": "Attribute “aria-expanded” not allowed on element “input” at this point.",
+      "extract": "          <input class=\"govuk-radios__input\" id=\"createOrAdd-2\" name=\"createOrAdd\" type=\"radio\" value=\"add\" aria-controls=\"conditional-createOrAdd-2\" aria-expanded=\"false\">      ",
+      "hiliteStart": 10,
+      "hiliteLength": 162
+    },
+    {
+      "type": "info",
+      "url": "file:/home/seluser/pages/1586243984591/index.html",
+      "lastLine": 1,
+      "lastColumn": 9289,
+      "firstColumn": 9241,
+      "subType": "warning",
+      "message": "The “contentinfo” role is unnecessary for element “footer”.",
+      "extract": "          <footer class=\"govuk-footer \" role=\"contentinfo\">  <div",
+      "hiliteStart": 10,
+      "hiliteLength": 49
+    },
+    {
+      "type": "info",
+      "url": "file:/home/seluser/pages/1586243984591/index.html",
+      "lastLine": 1,
+      "lastColumn": 12247,
+      "firstColumn": 12109,
+      "subType": "warning",
+      "message": "The “type” attribute is unnecessary for JavaScript resources.",
+      "extract": "/script>  <script src=\"./_-_customs-movements_-_assets_-_javascripts_-_f695658f6c185512eca1d445454ebc52-show-hide-content.js\" type=\"text/javascript\"></scri",
+      "hiliteStart": 10,
+      "hiliteLength": 139
+    }
+  ]
+}

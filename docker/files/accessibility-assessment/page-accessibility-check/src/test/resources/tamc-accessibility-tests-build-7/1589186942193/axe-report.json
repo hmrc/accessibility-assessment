@@ -1,0 +1,3539 @@
+[
+  {
+    "inapplicable": [
+      {
+        "description": "Ensures every accesskey attribute value is unique",
+        "help": "accesskey attribute value must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/accesskeys?application=webdriverjs",
+        "id": "accesskeys",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "best-practice",
+          "cat.keyboard"
+        ]
+      },
+      {
+        "description": "Ensures <area> elements of image maps have alternate text",
+        "help": "Active <area> elements must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/area-alt?application=webdriverjs",
+        "id": "area-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "wcag244",
+          "wcag412",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures aria-hidden='true' is not present on the document body.",
+        "help": "aria-hidden='true' must not be present on the document body",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-hidden-body?application=webdriverjs",
+        "id": "aria-hidden-body",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures every ARIA input field has an accessible name",
+        "help": "ARIA input fields have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-input-field-name?application=webdriverjs",
+        "id": "aria-input-field-name",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensure aria-roledescription is only used on elements with an implicit or explicit role",
+        "help": "Use aria-roledescription on elements with a semantic role",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-roledescription?application=webdriverjs",
+        "id": "aria-roledescription",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures every ARIA toggle field has an accessible name",
+        "help": "ARIA toggle fields have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-toggle-field-name?application=webdriverjs",
+        "id": "aria-toggle-field-name",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+        "help": "autocomplete attribute must be used correctly",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/autocomplete-valid?application=webdriverjs",
+        "id": "autocomplete-valid",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.forms",
+          "wcag21aa",
+          "wcag135"
+        ]
+      },
+      {
+        "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+        "help": "Inline text spacing must be adjustable with custom stylesheets",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/avoid-inline-spacing?application=webdriverjs",
+        "id": "avoid-inline-spacing",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "wcag21aa",
+          "wcag1412"
+        ]
+      },
+      {
+        "description": "Ensures <blink> elements are not used",
+        "help": "<blink> elements are deprecated and must not be used",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/blink?application=webdriverjs",
+        "id": "blink",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag222",
+          "section508",
+          "section508.22.j"
+        ]
+      },
+      {
+        "description": "Ensures <dl> elements are structured correctly",
+        "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/definition-list?application=webdriverjs",
+        "id": "definition-list",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures <dt> and <dd> elements are contained by a <dl>",
+        "help": "<dt> and <dd> elements must be contained by a <dl>",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/dlitem?application=webdriverjs",
+        "id": "dlitem",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures each HTML document contains a non-empty <title> element",
+        "help": "Documents must have <title> element to aid in navigation",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/document-title?application=webdriverjs",
+        "id": "document-title",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag242"
+        ]
+      },
+      {
+        "description": "Ensures form field does not have multiple label elements",
+        "help": "Form field should not have multiple label elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/form-field-multiple-labels?application=webdriverjs",
+        "id": "form-field-multiple-labels",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ]
+      },
+      {
+        "description": "Ensures <iframe> and <frame> elements contain the axe-core script",
+        "help": "Frames must be tested with axe-core",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/frame-tested?application=webdriverjs",
+        "id": "frame-tested",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.structure",
+          "review-item",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures <iframe> and <frame> elements contain a unique title attribute",
+        "help": "Frames must have a unique title attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/frame-title-unique?application=webdriverjs",
+        "id": "frame-title-unique",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures <iframe> and <frame> elements contain a non-empty title attribute",
+        "help": "Frames must have title attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/frame-title?application=webdriverjs",
+        "id": "frame-title",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag241",
+          "wcag412",
+          "section508",
+          "section508.22.i"
+        ]
+      },
+      {
+        "description": "Ensures every HTML document has a lang attribute",
+        "help": "<html> element must have a lang attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/html-has-lang?application=webdriverjs",
+        "id": "html-has-lang",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ]
+      },
+      {
+        "description": "Ensures the lang attribute of the <html> element has a valid value",
+        "help": "<html> element must have a valid value for the lang attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/html-lang-valid?application=webdriverjs",
+        "id": "html-lang-valid",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ]
+      },
+      {
+        "description": "Ensure that HTML elements with both valid lang and xml:lang attributes agree on the base language of the page",
+        "help": "HTML elements with lang and xml:lang must have the same base language",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/html-xml-lang-mismatch?application=webdriverjs",
+        "id": "html-xml-lang-mismatch",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ]
+      },
+      {
+        "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+        "help": "Images must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/image-alt?application=webdriverjs",
+        "id": "image-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensure image alternative is not repeated as text",
+        "help": "Alternative text of images should not be repeated as text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/image-redundant-alt?application=webdriverjs",
+        "id": "image-redundant-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures input buttons have discernible text",
+        "help": "Input buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/input-button-name?application=webdriverjs",
+        "id": "input-button-name",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures <input type=\"image\"> elements have alternate text",
+        "help": "Image buttons must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/input-image-alt?application=webdriverjs",
+        "id": "input-image-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures that every form element is not solely labeled using the title or aria-describedby attributes",
+        "help": "Form elements should have a visible label",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/label-title-only?application=webdriverjs",
+        "id": "label-title-only",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.forms",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures every form element has a label",
+        "help": "Form elements must have labels",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/label?application=webdriverjs",
+        "id": "label",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag412",
+          "wcag131",
+          "section508",
+          "section508.22.n"
+        ]
+      },
+      {
+        "description": "Ensures the banner landmark is at top level",
+        "help": "Banner landmark must not be contained in another landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-banner-is-top-level?application=webdriverjs",
+        "id": "landmark-banner-is-top-level",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the complementary landmark or aside is at top level",
+        "help": "Aside must not be contained in another landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-complementary-is-top-level?application=webdriverjs",
+        "id": "landmark-complementary-is-top-level",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the contentinfo landmark is at top level",
+        "help": "Contentinfo landmark must not be contained in another landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-contentinfo-is-top-level?application=webdriverjs",
+        "id": "landmark-contentinfo-is-top-level",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the document has at most one contentinfo landmark",
+        "help": "Document must not have more than one contentinfo landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-no-duplicate-contentinfo?application=webdriverjs",
+        "id": "landmark-no-duplicate-contentinfo",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the document has a main landmark",
+        "help": "Document must have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-one-main?application=webdriverjs",
+        "id": "landmark-one-main",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures <marquee> elements are not used",
+        "help": "<marquee> elements are deprecated and must not be used",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/marquee?application=webdriverjs",
+        "id": "marquee",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag222"
+        ]
+      },
+      {
+        "description": "Ensures <meta http-equiv=\"refresh\"> is not used",
+        "help": "Timed refresh must not exist",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/meta-refresh?application=webdriverjs",
+        "id": "meta-refresh",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag2aaa",
+          "wcag221",
+          "wcag224",
+          "wcag325"
+        ]
+      },
+      {
+        "description": "Ensures <meta name=\"viewport\"> can scale a significant amount",
+        "help": "Users should be able to zoom and scale the text up to 500%",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/meta-viewport-large?application=webdriverjs",
+        "id": "meta-viewport-large",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.sensory-and-visual-cues",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
+        "help": "Zooming and scaling must not be disabled",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/meta-viewport?application=webdriverjs",
+        "id": "meta-viewport",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.sensory-and-visual-cues",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures <object> elements have alternate text",
+        "help": "<object> elements must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/object-alt?application=webdriverjs",
+        "id": "object-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+        "help": "Page must contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/page-has-heading-one?application=webdriverjs",
+        "id": "page-has-heading-one",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures all page content is contained by landmarks",
+        "help": "All page content must be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/region?application=webdriverjs",
+        "id": "region",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.keyboard",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures [role='img'] elements have alternate text",
+        "help": "[role='img'] elements have an alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/role-img-alt?application=webdriverjs",
+        "id": "role-img-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Elements that have scrollable content should be accessible by keyboard",
+        "help": "Ensure that scrollable region has keyboard access",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/scrollable-region-focusable?application=webdriverjs",
+        "id": "scrollable-region-focusable",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "wcag2a",
+          "wcag211"
+        ]
+      },
+      {
+        "description": "Ensures that server-side image maps are not used",
+        "help": "Server-side image maps must not be used",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/server-side-image-map?application=webdriverjs",
+        "id": "server-side-image-map",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag211",
+          "section508",
+          "section508.22.f"
+        ]
+      },
+      {
+        "description": "Ensure all skip links have a focusable target",
+        "help": "The skip-link target should exist and be focusable",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/skip-link?application=webdriverjs",
+        "id": "skip-link",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.keyboard",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures svg elements with an img, graphics-document or graphics-symbol role have an accessible text",
+        "help": "svg elements with an img role have an alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/svg-img-alt?application=webdriverjs",
+        "id": "svg-img-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures tabindex attribute values are not greater than 0",
+        "help": "Elements should not have tabindex greater than zero",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/tabindex?application=webdriverjs",
+        "id": "tabindex",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.keyboard",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures lang attributes have valid values",
+        "help": "lang attribute must have a valid value",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/valid-lang?application=webdriverjs",
+        "id": "valid-lang",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.language",
+          "wcag2aa",
+          "wcag312"
+        ]
+      },
+      {
+        "description": "Ensures <video> elements have captions",
+        "help": "<video> elements must have captions",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/video-caption?application=webdriverjs",
+        "id": "video-caption",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag122",
+          "section508",
+          "section508.22.a"
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+        "help": "Elements must have sufficient color contrast",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/color-contrast?application=webdriverjs",
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#4a4a4a",
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage"
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image",
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"account-icon account-icon--home\">                                        Account home                                </span>",
+                    "target": [
+                      ".account-icon--home"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+            "html": "<span class=\"account-icon account-icon--home\">                                        Account home                                </span>",
+            "impact": "serious",
+            "none": [],
+            "target": [
+              ".account-icon--home"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#4a4a4a",
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage"
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image",
+                "relatedNodes": [
+                  {
+                    "html": "<a href=\"#subnav-your-account\" id=\"account-menu__main-2\" class=\"account-menu__link account-icon account-menu__link--more\" aria-haspopup=\"true\" aria-owns=\"subnav-your-account\" data-journey-click=\"accordion - click:utility-nav:Your account\" aria-expanded=\"false\">",
+                    "target": [
+                      "#account-menu__main-2"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+            "html": "<a href=\"#subnav-your-account\" id=\"account-menu__main-2\" class=\"account-menu__link account-icon account-menu__link--more\" aria-haspopup=\"true\" aria-owns=\"subnav-your-account\" data-journey-click=\"accordion - click:utility-nav:Your account\" aria-expanded=\"false\">",
+            "impact": "serious",
+            "none": [],
+            "target": [
+              "#account-menu__main-2"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "expectedContrastRatio": "3:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "36.0pt (48px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgOverlap"
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "relatedNodes": []
+              }
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<h1 class=\"heading-xlarge\">Confirm cancellation of Marriage Allowance</h1>",
+            "impact": "serious",
+            "none": [],
+            "target": [
+              "h1"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "expectedContrastRatio": "3:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgOverlap"
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "relatedNodes": []
+              }
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<th scope=\"row\" class=\"bold\">Your name</th>",
+            "impact": "serious",
+            "none": [],
+            "target": [
+              "tr:nth-child(1) > th"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap"
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "relatedNodes": []
+              }
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<td>Sharon Lawrence</td>",
+            "impact": "serious",
+            "none": [],
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2)"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143"
+        ]
+      },
+      {
+        "description": "Ensure that links with the same accessible name serve a similar purpose",
+        "help": "Links with the same name have a similar purpose",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/identical-links-same-purpose?application=webdriverjs",
+        "id": "identical-links-same-purpose",
+        "impact": "minor",
+        "nodes": [
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "change",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "",
+                    "pathname": "/marriage-allowance-application/divorce-enter-year/",
+                    "port": "",
+                    "protocol": "file:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "Check that links have the same purpose, or are intentionally ambiguous.",
+                "relatedNodes": [
+                  {
+                    "html": "<a href=\"/marriage-allowance-application/confirm-email\" id=\"edit-field\">Change</a>",
+                    "target": [
+                      "tr:nth-child(3) > td:nth-child(3) > a"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "any": [],
+            "failureSummary": "Fix all of the following:\n  Check that links have the same purpose, or are intentionally ambiguous.",
+            "html": "<a href=\"/marriage-allowance-application/divorce-enter-year\" id=\"edit-field\">Change</a>",
+            "impact": "minor",
+            "none": [],
+            "target": [
+              "tr:nth-child(2) > td:nth-child(3) > a"
+            ]
+          }
+        ],
+        "tags": [
+          "wcag2aaa",
+          "wcag249",
+          "best-practice"
+        ]
+      }
+    ],
+    "passes": [
+      {
+        "description": "Ensures ARIA attributes are allowed for an element's role",
+        "help": "Elements must only use allowed ARIA attributes",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-allowed-attr?application=webdriverjs",
+        "id": "aria-allowed-attr",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-allowed-attr",
+                "impact": "critical",
+                "message": "ARIA attributes are used correctly for the defined role",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav id=\"secondary-nav\" class=\"account-menu\" role=\"navigation\" aria-label=\"Account\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "aria-unsupported-attr",
+                "impact": "critical",
+                "message": "ARIA attribute is supported",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#secondary-nav"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-allowed-attr",
+                "impact": "critical",
+                "message": "ARIA attributes are used correctly for the defined role",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"#subnav-your-account\" id=\"account-menu__main-2\" class=\"account-menu__link account-icon account-menu__link--more\" aria-haspopup=\"true\" aria-owns=\"subnav-your-account\" data-journey-click=\"accordion - click:utility-nav:Your account\" aria-expanded=\"false\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "aria-unsupported-attr",
+                "impact": "critical",
+                "message": "ARIA attribute is supported",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#account-menu__main-2"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures role attribute has an appropriate value for the element",
+        "help": "ARIA role must be appropriate for the element",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-allowed-role?application=webdriverjs",
+        "id": "aria-allowed-role",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main id=\"wrapper\" role=\"main\" class=\"\" data-journey=\"marriage-allowance:stage:confirm\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#wrapper"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav id=\"secondary-nav\" class=\"account-menu\" role=\"navigation\" aria-label=\"Account\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#secondary-nav"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div class=\"subnav\" id=\"subnav-your-account\" role=\"navigation\" aria-labelledby=\"account-menu__main-2\" aria-label=\"Your account\" aria-hidden=\"true\" tabindex=\"-1\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#subnav-your-account"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures aria-hidden elements do not contain focusable elements",
+        "help": "ARIA hidden element must not contain focusable elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-hidden-focus?application=webdriverjs",
+        "id": "aria-hidden-focus",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [
+              {
+                "data": null,
+                "id": "focusable-modal-open",
+                "impact": "serious",
+                "message": "No focusable elements while a modal is open",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "focusable-disabled",
+                "impact": "serious",
+                "message": "No focusable elements contained within element",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "focusable-not-tabbable",
+                "impact": "serious",
+                "message": "No focusable elements contained within element",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a href=\"#\" class=\"account-menu__link account-menu__link--menu js-hidden js-visible\" aria-hidden=\"true\" aria-expanded=\"false\" data-journey-click=\"link - click:utility-nav:Account menu\">                                    Account menu                            </a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".account-menu__link--menu"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": null,
+                "id": "focusable-modal-open",
+                "impact": "serious",
+                "message": "No focusable elements while a modal is open",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "focusable-disabled",
+                "impact": "serious",
+                "message": "No focusable elements contained within element",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "focusable-not-tabbable",
+                "impact": "serious",
+                "message": "No focusable elements contained within element",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<li class=\"account-menu__link--back hidden\" aria-hidden=\"true\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".account-menu__link--back"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": null,
+                "id": "focusable-modal-open",
+                "impact": "serious",
+                "message": "No focusable elements while a modal is open",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "focusable-disabled",
+                "impact": "serious",
+                "message": "No focusable elements contained within element",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "focusable-not-tabbable",
+                "impact": "serious",
+                "message": "No focusable elements contained within element",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<div class=\"subnav\" id=\"subnav-your-account\" role=\"navigation\" aria-labelledby=\"account-menu__main-2\" aria-label=\"Your account\" aria-hidden=\"true\" tabindex=\"-1\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#subnav-your-account"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures elements with ARIA roles have all required ARIA attributes",
+        "help": "Required ARIA attributes must be provided",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-required-attr?application=webdriverjs",
+        "id": "aria-required-attr",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-attr",
+                "impact": "critical",
+                "message": "All required ARIA attributes are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main id=\"wrapper\" role=\"main\" class=\"\" data-journey=\"marriage-allowance:stage:confirm\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#wrapper"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-attr",
+                "impact": "critical",
+                "message": "All required ARIA attributes are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav id=\"secondary-nav\" class=\"account-menu\" role=\"navigation\" aria-label=\"Account\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#secondary-nav"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures elements with an ARIA role that require child roles contain them",
+        "help": "Certain ARIA roles must contain particular children",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-required-children?application=webdriverjs",
+        "id": "aria-required-children",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-children",
+                "impact": "critical",
+                "message": "Required ARIA children are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main id=\"wrapper\" role=\"main\" class=\"\" data-journey=\"marriage-allowance:stage:confirm\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#wrapper"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-children",
+                "impact": "critical",
+                "message": "Required ARIA children are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav id=\"secondary-nav\" class=\"account-menu\" role=\"navigation\" aria-label=\"Account\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#secondary-nav"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures elements with an ARIA role that require parent roles are contained by them",
+        "help": "Certain ARIA roles must be contained by particular parents",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-required-parent?application=webdriverjs",
+        "id": "aria-required-parent",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-parent",
+                "impact": "critical",
+                "message": "Required ARIA parent role present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main id=\"wrapper\" role=\"main\" class=\"\" data-journey=\"marriage-allowance:stage:confirm\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#wrapper"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-parent",
+                "impact": "critical",
+                "message": "Required ARIA parent role present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav id=\"secondary-nav\" class=\"account-menu\" role=\"navigation\" aria-label=\"Account\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#secondary-nav"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures all elements with a role attribute use a valid value",
+        "help": "ARIA roles used must conform to valid values",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-roles?application=webdriverjs",
+        "id": "aria-roles",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [],
+            "html": "<main id=\"wrapper\" role=\"main\" class=\"\" data-journey=\"marriage-allowance:stage:confirm\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "fallbackrole",
+                "impact": "serious",
+                "message": "Only one role value used",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "invalidrole",
+                "impact": "critical",
+                "message": "ARIA role is valid",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "abstractrole",
+                "impact": "serious",
+                "message": "Abstract roles are not used",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "unsupportedrole",
+                "impact": "critical",
+                "message": "ARIA role is supported",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#wrapper"
+            ]
+          },
+          {
+            "all": [],
+            "any": [],
+            "html": "<nav id=\"secondary-nav\" class=\"account-menu\" role=\"navigation\" aria-label=\"Account\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "fallbackrole",
+                "impact": "serious",
+                "message": "Only one role value used",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "invalidrole",
+                "impact": "critical",
+                "message": "ARIA role is valid",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "abstractrole",
+                "impact": "serious",
+                "message": "Abstract roles are not used",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "unsupportedrole",
+                "impact": "critical",
+                "message": "ARIA role is supported",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#secondary-nav"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures all ARIA attributes have valid values",
+        "help": "ARIA attributes must conform to valid values",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-valid-attr-value?application=webdriverjs",
+        "id": "aria-valid-attr-value",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [
+              {
+                "data": null,
+                "id": "aria-valid-attr-value",
+                "impact": "critical",
+                "message": "ARIA attribute values are valid",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "aria-errormessage",
+                "impact": "critical",
+                "message": "Uses a supported aria-errormessage technique",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<nav id=\"secondary-nav\" class=\"account-menu\" role=\"navigation\" aria-label=\"Account\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#secondary-nav"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": null,
+                "id": "aria-valid-attr-value",
+                "impact": "critical",
+                "message": "ARIA attribute values are valid",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "aria-errormessage",
+                "impact": "critical",
+                "message": "Uses a supported aria-errormessage technique",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a href=\"#subnav-your-account\" id=\"account-menu__main-2\" class=\"account-menu__link account-icon account-menu__link--more\" aria-haspopup=\"true\" aria-owns=\"subnav-your-account\" data-journey-click=\"accordion - click:utility-nav:Your account\" aria-expanded=\"false\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#account-menu__main-2"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures attributes that begin with aria- are valid ARIA attributes",
+        "help": "ARIA attributes must conform to valid names",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-valid-attr?application=webdriverjs",
+        "id": "aria-valid-attr",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-valid-attr",
+                "impact": "critical",
+                "message": "ARIA attribute name is valid",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav id=\"secondary-nav\" class=\"account-menu\" role=\"navigation\" aria-label=\"Account\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#secondary-nav"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-valid-attr",
+                "impact": "critical",
+                "message": "ARIA attribute name is valid",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"#subnav-your-account\" id=\"account-menu__main-2\" class=\"account-menu__link account-icon account-menu__link--more\" aria-haspopup=\"true\" aria-owns=\"subnav-your-account\" data-journey-click=\"accordion - click:utility-nav:Your account\" aria-expanded=\"false\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#account-menu__main-2"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures buttons have discernible text",
+        "help": "Buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/button-name?application=webdriverjs",
+        "id": "button-name",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "Confirm cancellation",
+                "id": "button-has-visible-text",
+                "impact": "critical",
+                "message": "Element has inner text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<button class=\"button\" type=\"submit\" data-journey-click=\"marriage-allowance:link:confirm_cancellation\">    Confirm cancellation   </button>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "form[method=\"GET\"] > button"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+        "help": "Elements must have sufficient color contrast",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/color-contrast?application=webdriverjs",
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 8.86,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#4a4a4a",
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 8.86",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"http://localhost:9232/personal-account/messages\" class=\"account-menu__link\" data-journey-click=\"link - click:utility-nav:Messages\">                                            Messages                                    </a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "li:nth-child(2) > .account-menu__link"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 8.86,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#4a4a4a",
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 8.86",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"http://localhost:9100/track\" class=\"account-menu__link\" data-journey-click=\"link - click:utility-nav:Check progress\">                                            Check progress                                    </a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "a[href$=\"track\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 8.86,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#4a4a4a",
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 8.86",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/marriage-allowance-application/logout\" class=\"account-menu__link\" data-journey-click=\"link - click:utility-nav:Sign out\">                                                Sign out                                        </a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "li:nth-child(5) > .account-menu__link"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a id=\"backLink\" href=\"javascript:void(0);\" target=\"_self\" data-sso=\"false\" class=\"displayIfJsEnabled link-back\" onclick=\"javascript:window.history.back(); return false;\">Back</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#backLink"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "3:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "bold",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<th scope=\"row\" class=\"bold\">Date of divorce, end of civil partnership or legal separation</th>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "tr:nth-child(2) > th"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<td>1&nbsp;January&nbsp;2020</td>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "tr:nth-child(2) > td:nth-child(2)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 6.67,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#005ea5",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.67",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/marriage-allowance-application/divorce-enter-year\" id=\"edit-field\">Change</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "tr:nth-child(2) > td:nth-child(3) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "3:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "bold",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<th scope=\"row\" class=\"bold\">Email</th>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "tr:nth-child(3) > th"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<td>email@email.com</td>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 6.67,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#005ea5",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.67",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/marriage-allowance-application/confirm-email\" id=\"edit-field\">Change</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "tr:nth-child(3) > td:nth-child(3) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<p>You have asked us to cancel your Marriage Allowance. This means:</p>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "article > p"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>your Marriage Allowance will remain in place until 5&nbsp;April&nbsp;2020</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".bullets > li:nth-child(1)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>your Personal Allowance will go back to the normal amount from 6&nbsp;April&nbsp;2020</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".bullets > li:nth-child(2)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#00823b",
+                  "contrastRatio": 4.93,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#ffffff",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 4.93",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<button class=\"button\" type=\"submit\" data-journey-click=\"marriage-allowance:link:confirm_cancellation\">    Confirm cancellation   </button>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "form[method=\"GET\"] > button"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 8.98,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#454a4c",
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 8.98",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"report-error__toggle js-visible\" id=\"get-help-action\" href=\"#error-feedback-form\">Is there anything wrong with this page?</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#get-help-action"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of ${data.contrastRatio}",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input id=\"report-name\" maxlength=\"70\" class=\"input--fullwidth form-control\" name=\"report-name\" type=\"text\" value=\"\" data-rule-pattern=\"^[A-Za-z\\-.,()'&quot;\\s]+$\" data-msg-pattern=\"Letters or punctuation only please\" data-rule-required=\"true\" data-msg-required=\"Please provide your name.\" aria-required=\"true\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#report-name"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of ${data.contrastRatio}",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input id=\"report-email\" maxlength=\"255\" class=\"input--fullwidth form-control\" name=\"report-email\" type=\"text\" value=\"\" data-rule-email=\"true\" data-msg-email=\"Please enter a valid email address.\" data-rule-required=\"true\" data-msg-required=\"Please provide your email address.\" aria-required=\"true\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#report-email"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of ${data.contrastRatio}",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input id=\"report-action\" maxlength=\"1000\" class=\"input--fullwidth form-control\" name=\"report-action\" type=\"text\" value=\"\" data-rule-required=\"true\" data-msg-required=\"Please enter details of what you were doing.\" aria-required=\"true\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#report-action"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of ${data.contrastRatio}",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input id=\"report-error\" maxlength=\"1000\" class=\"input--cleared form-control\" name=\"report-error\" type=\"text\" value=\"\" data-rule-required=\"true\" data-msg-required=\"Please enter details of what went wrong.\" aria-required=\"true\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#report-error"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#005ea5",
+                  "contrastRatio": 6.67,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#ffffff",
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.67",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<strong class=\"phase-tag\">BETA</strong>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "strong"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#000000",
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<span>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "p > span"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 6.67,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#005ea5",
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.67",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a id=\"feedback-link\" href=\"http://localhost:9250/contact/beta-feedback-unauthenticated?service=TAMC\" data-sso=\"false\" data-journey-click=\"other-global:Click:Feedback\">                                                        feedback</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#feedback-link"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143"
+        ]
+      },
+      {
+        "description": "Ensures every id attribute value of active elements is unique",
+        "help": "IDs of active elements must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/duplicate-id-active?application=webdriverjs",
+        "id": "duplicate-id-active",
+        "impact": "serious",
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "backLink",
+                "id": "duplicate-id-active",
+                "impact": "serious",
+                "message": "Document has no active elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a id=\"backLink\" href=\"javascript:void(0);\" target=\"_self\" data-sso=\"false\" class=\"displayIfJsEnabled link-back\" onclick=\"javascript:window.history.back(); return false;\">Back</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#backLink"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "get-help-action",
+                "id": "duplicate-id-active",
+                "impact": "serious",
+                "message": "Document has no active elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"report-error__toggle js-visible\" id=\"get-help-action\" href=\"#error-feedback-form\">Is there anything wrong with this page?</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#get-help-action"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "feedback-link",
+                "id": "duplicate-id-active",
+                "impact": "serious",
+                "message": "Document has no active elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a id=\"feedback-link\" href=\"http://localhost:9250/contact/beta-feedback-unauthenticated?service=TAMC\" data-sso=\"false\" data-journey-click=\"other-global:Click:Feedback\">                                                        feedback</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#feedback-link"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag411"
+        ]
+      },
+      {
+        "description": "Ensures every id attribute value used in ARIA and in labels is unique",
+        "help": "IDs used in ARIA and labels must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/duplicate-id-aria?application=webdriverjs",
+        "id": "duplicate-id-aria",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "account-menu__main-2",
+                "id": "duplicate-id-aria",
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"#subnav-your-account\" id=\"account-menu__main-2\" class=\"account-menu__link account-icon account-menu__link--more\" aria-haspopup=\"true\" aria-owns=\"subnav-your-account\" data-journey-click=\"accordion - click:utility-nav:Your account\" aria-expanded=\"false\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#account-menu__main-2"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "subnav-your-account",
+                "id": "duplicate-id-aria",
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div class=\"subnav\" id=\"subnav-your-account\" role=\"navigation\" aria-labelledby=\"account-menu__main-2\" aria-label=\"Your account\" aria-hidden=\"true\" tabindex=\"-1\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#subnav-your-account"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "report-name",
+                "id": "duplicate-id-aria",
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input id=\"report-name\" maxlength=\"70\" class=\"input--fullwidth form-control\" name=\"report-name\" type=\"text\" value=\"\" data-rule-pattern=\"^[A-Za-z\\-.,()'&quot;\\s]+$\" data-msg-pattern=\"Letters or punctuation only please\" data-rule-required=\"true\" data-msg-required=\"Please provide your name.\" aria-required=\"true\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#report-name"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "report-email",
+                "id": "duplicate-id-aria",
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input id=\"report-email\" maxlength=\"255\" class=\"input--fullwidth form-control\" name=\"report-email\" type=\"text\" value=\"\" data-rule-email=\"true\" data-msg-email=\"Please enter a valid email address.\" data-rule-required=\"true\" data-msg-required=\"Please provide your email address.\" aria-required=\"true\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#report-email"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "report-action",
+                "id": "duplicate-id-aria",
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input id=\"report-action\" maxlength=\"1000\" class=\"input--fullwidth form-control\" name=\"report-action\" type=\"text\" value=\"\" data-rule-required=\"true\" data-msg-required=\"Please enter details of what you were doing.\" aria-required=\"true\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#report-action"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "report-error",
+                "id": "duplicate-id-aria",
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input id=\"report-error\" maxlength=\"1000\" class=\"input--cleared form-control\" name=\"report-error\" type=\"text\" value=\"\" data-rule-required=\"true\" data-msg-required=\"Please enter details of what went wrong.\" aria-required=\"true\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#report-error"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag411"
+        ]
+      },
+      {
+        "description": "Ensures every id attribute value is unique",
+        "help": "id attribute value must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/duplicate-id?application=webdriverjs",
+        "id": "duplicate-id",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "wrapper",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main id=\"wrapper\" role=\"main\" class=\"\" data-journey=\"marriage-allowance:stage:confirm\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#wrapper"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "content",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"content\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#content"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "secondary-nav",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav id=\"secondary-nav\" class=\"account-menu\" role=\"navigation\" aria-label=\"Account\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#secondary-nav"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "skipto",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"skipto\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#skipto"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "error-feedback-form",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<form action=\"http://localhost:9250/contact/problem_reports\" method=\"POST\" id=\"error-feedback-form\" class=\"form--feedback\" novalidate=\"novalidate\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#error-feedback-form"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "service",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input type=\"hidden\" name=\"service\" id=\"service\" value=\"unknown\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#service"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "smallInputFields",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<fieldset id=\"smallInputFields\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#smallInputFields"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "isJavascript",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input type=\"hidden\" name=\"isJavascript\" id=\"isJavascript\" value=\"true\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#isJavascript"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "report-submit",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<button id=\"report-submit\" class=\"button\" type=\"submit\" data-journey-click=\"page:Click:Get help with this page Submit\">Send</button>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#report-submit"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag411"
+        ]
+      },
+      {
+        "description": "Ensures headings have discernible text",
+        "help": "Headings must not be empty",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/empty-heading?application=webdriverjs",
+        "id": "empty-heading",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h1 class=\"heading-xlarge\">Confirm cancellation of Marriage Allowance</h1>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "h1"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.name-role-value",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the order of headings is semantically correct",
+        "help": "Heading levels should only increase by one",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/heading-order?application=webdriverjs",
+        "id": "heading-order",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": 1,
+                "id": "heading-order",
+                "impact": "moderate",
+                "message": "Heading order valid",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h1 class=\"heading-xlarge\">Confirm cancellation of Marriage Allowance</h1>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "h1"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensure that links with the same accessible name serve a similar purpose",
+        "help": "Links with the same name have a similar purpose",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/identical-links-same-purpose?application=webdriverjs",
+        "id": "identical-links-same-purpose",
+        "impact": "minor",
+        "nodes": [
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "account home",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "localhost",
+                    "pathname": "/personal-account/",
+                    "port": "9232",
+                    "protocol": "http:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a href=\"http://localhost:9232/personal-account\" class=\"account-menu__link account-menu__link--home\" data-journey-click=\"link - click:utility-nav:Account home\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".account-menu__link--home"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "messages",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "localhost",
+                    "pathname": "/personal-account/messages/",
+                    "port": "9232",
+                    "protocol": "http:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a href=\"http://localhost:9232/personal-account/messages\" class=\"account-menu__link\" data-journey-click=\"link - click:utility-nav:Messages\">                                            Messages                                    </a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "li:nth-child(2) > .account-menu__link"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "check progress",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "localhost",
+                    "pathname": "/track/",
+                    "port": "9100",
+                    "protocol": "http:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a href=\"http://localhost:9100/track\" class=\"account-menu__link\" data-journey-click=\"link - click:utility-nav:Check progress\">                                            Check progress                                    </a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "a[href$=\"track\"]"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "your account",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "",
+                    "pathname": "/home/seluser/pages/1589186942193/",
+                    "port": "",
+                    "protocol": "file:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a href=\"#subnav-your-account\" id=\"account-menu__main-2\" class=\"account-menu__link account-icon account-menu__link--more\" aria-haspopup=\"true\" aria-owns=\"subnav-your-account\" data-journey-click=\"accordion - click:utility-nav:Your account\" aria-expanded=\"false\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#account-menu__main-2"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "sign out",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "",
+                    "pathname": "/marriage-allowance-application/logout/",
+                    "port": "",
+                    "protocol": "file:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a href=\"/marriage-allowance-application/logout\" class=\"account-menu__link\" data-journey-click=\"link - click:utility-nav:Sign out\">                                                Sign out                                        </a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "li:nth-child(5) > .account-menu__link"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "back",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "",
+                    "pathname": "/void(0);/",
+                    "port": "",
+                    "protocol": "javascript:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a id=\"backLink\" href=\"javascript:void(0);\" target=\"_self\" data-sso=\"false\" class=\"displayIfJsEnabled link-back\" onclick=\"javascript:window.history.back(); return false;\">Back</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#backLink"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "is there anything wrong with this page",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "",
+                    "pathname": "/home/seluser/pages/1589186942193/",
+                    "port": "",
+                    "protocol": "file:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a class=\"report-error__toggle js-visible\" id=\"get-help-action\" href=\"#error-feedback-form\">Is there anything wrong with this page?</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#get-help-action"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "feedback",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "localhost",
+                    "pathname": "/contact/beta-feedback-unauthenticated/",
+                    "port": "9250",
+                    "protocol": "http:",
+                    "search": {
+                      "service": "TAMC"
+                    }
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a id=\"feedback-link\" href=\"http://localhost:9250/contact/beta-feedback-unauthenticated?service=TAMC\" data-sso=\"false\" data-journey-click=\"other-global:Click:Feedback\">                                                        feedback</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#feedback-link"
+            ]
+          }
+        ],
+        "tags": [
+          "wcag2aaa",
+          "wcag249",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the main landmark is at top level",
+        "help": "Main landmark must not be contained in another landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-main-is-top-level?application=webdriverjs",
+        "id": "landmark-main-is-top-level",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "role": "main"
+                },
+                "id": "landmark-is-top-level",
+                "impact": "moderate",
+                "message": "The main landmark is at the top level.",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main id=\"wrapper\" role=\"main\" class=\"\" data-journey=\"marriage-allowance:stage:confirm\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#wrapper"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the document has at most one banner landmark",
+        "help": "Document must not have more than one banner landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-no-duplicate-banner?application=webdriverjs",
+        "id": "landmark-no-duplicate-banner",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "page-no-duplicate-banner",
+                "impact": "moderate",
+                "message": "Document does not have more than one banner landmark",
+                "relatedNodes": [
+                  {
+                    "html": "<header role=\"banner\" id=\"global-header\" class=\"with-proposition\">",
+                    "target": [
+                      "#global-header"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "html": "<header class=\"page-heading\">     <h1 class=\"heading-xlarge\">Confirm cancellation of Marriage Allowance</h1> </header>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".page-heading"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the document has at most one main landmark",
+        "help": "Document must not have more than one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-no-duplicate-main?application=webdriverjs",
+        "id": "landmark-no-duplicate-main",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "page-no-duplicate-main",
+                "impact": "moderate",
+                "message": "Document does not have more than one main landmark",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main id=\"wrapper\" role=\"main\" class=\"\" data-journey=\"marriage-allowance:stage:confirm\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#wrapper"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination",
+        "help": "Ensures landmarks are unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-unique?application=webdriverjs",
+        "id": "landmark-unique",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "accessibleText": null,
+                  "role": "main"
+                },
+                "id": "landmark-is-unique",
+                "impact": "moderate",
+                "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main id=\"wrapper\" role=\"main\" class=\"\" data-journey=\"marriage-allowance:stage:confirm\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#wrapper"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "accessibleText": "account",
+                  "role": "navigation"
+                },
+                "id": "landmark-is-unique",
+                "impact": "moderate",
+                "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav id=\"secondary-nav\" class=\"account-menu\" role=\"navigation\" aria-label=\"Account\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#secondary-nav"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures links have discernible text",
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/link-name?application=webdriverjs",
+        "id": "link-name",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"http://localhost:9232/personal-account\" class=\"account-menu__link account-menu__link--home\" data-journey-click=\"link - click:utility-nav:Account home\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".account-menu__link--home"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"http://localhost:9232/personal-account/messages\" class=\"account-menu__link\" data-journey-click=\"link - click:utility-nav:Messages\">                                            Messages                                    </a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "li:nth-child(2) > .account-menu__link"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"http://localhost:9100/track\" class=\"account-menu__link\" data-journey-click=\"link - click:utility-nav:Check progress\">                                            Check progress                                    </a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[href$=\"track\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"#subnav-your-account\" id=\"account-menu__main-2\" class=\"account-menu__link account-icon account-menu__link--more\" aria-haspopup=\"true\" aria-owns=\"subnav-your-account\" data-journey-click=\"accordion - click:utility-nav:Your account\" aria-expanded=\"false\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#account-menu__main-2"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/marriage-allowance-application/logout\" class=\"account-menu__link\" data-journey-click=\"link - click:utility-nav:Sign out\">                                                Sign out                                        </a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "li:nth-child(5) > .account-menu__link"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a id=\"backLink\" href=\"javascript:void(0);\" target=\"_self\" data-sso=\"false\" class=\"displayIfJsEnabled link-back\" onclick=\"javascript:window.history.back(); return false;\">Back</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#backLink"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/marriage-allowance-application/divorce-enter-year\" id=\"edit-field\">Change</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "tr:nth-child(2) > td:nth-child(3) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/marriage-allowance-application/confirm-email\" id=\"edit-field\">Change</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "tr:nth-child(3) > td:nth-child(3) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"report-error__toggle js-visible\" id=\"get-help-action\" href=\"#error-feedback-form\">Is there anything wrong with this page?</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#get-help-action"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a id=\"feedback-link\" href=\"http://localhost:9250/contact/beta-feedback-unauthenticated?service=TAMC\" data-sso=\"false\" data-journey-click=\"other-global:Click:Feedback\">                                                        feedback</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#feedback-link"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "wcag244",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures that lists are structured correctly",
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/list?application=webdriverjs",
+        "id": "list",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [],
+            "html": "<ul class=\"account-menu__main\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "only-listitems",
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".account-menu__main"
+            ]
+          },
+          {
+            "all": [],
+            "any": [],
+            "html": "<ul class=\"bullets\">  <li>your Marriage Allowance will remain in place until 5&nbsp;April&nbsp;2020</li>  <li>your Personal Allowance will go back to the normal amount from 6&nbsp;April&nbsp;2020</li> </ul>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "only-listitems",
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".bullets"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures <li> elements are used semantically",
+        "help": "<li> elements must be contained in a <ul> or <ol>",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/listitem?application=webdriverjs",
+        "id": "listitem",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".account-menu__main > li:nth-child(2)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".account-menu__main > li:nth-child(3)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".account-menu__main > li:nth-child(4)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "li:nth-child(5)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>your Marriage Allowance will remain in place until 5&nbsp;April&nbsp;2020</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".bullets > li:nth-child(1)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>your Personal Allowance will go back to the normal amount from 6&nbsp;April&nbsp;2020</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".bullets > li:nth-child(2)"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures the scope attribute is used correctly on tables",
+        "help": "scope attribute should be used correctly",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/scope-attr-valid?application=webdriverjs",
+        "id": "scope-attr-valid",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [
+              {
+                "data": null,
+                "id": "html5-scope",
+                "impact": "moderate",
+                "message": "Scope attribute is only used on table header elements (<th>)",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "scope-value",
+                "impact": "critical",
+                "message": "Scope attribute is used correctly",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<th scope=\"row\" class=\"bold\">Your name</th>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "tr:nth-child(1) > th"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": null,
+                "id": "html5-scope",
+                "impact": "moderate",
+                "message": "Scope attribute is only used on table header elements (<th>)",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "scope-value",
+                "impact": "critical",
+                "message": "Scope attribute is used correctly",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<th scope=\"row\" class=\"bold\">Date of divorce, end of civil partnership or legal separation</th>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "tr:nth-child(2) > th"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": null,
+                "id": "html5-scope",
+                "impact": "moderate",
+                "message": "Scope attribute is only used on table header elements (<th>)",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "scope-value",
+                "impact": "critical",
+                "message": "Scope attribute is used correctly",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<th scope=\"row\" class=\"bold\">Email</th>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "tr:nth-child(3) > th"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.tables",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensure that tables do not have the same summary and caption",
+        "help": "The <caption> element should not contain the same text as the summary attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/table-duplicate-name?application=webdriverjs",
+        "id": "table-duplicate-name",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [],
+            "html": "<table>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "same-caption-summary",
+                "impact": "minor",
+                "message": "Content of summary attribute and <caption> are not duplicated",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "table"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.tables",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensure that each cell in a table using the headers refers to another cell in that table",
+        "help": "All cells in a table element that use the headers attribute must only refer to other cells of that same table",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/td-headers-attr?application=webdriverjs",
+        "id": "td-headers-attr",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [
+              {
+                "data": null,
+                "id": "td-headers-attr",
+                "impact": "serious",
+                "message": "The headers attribute is exclusively used to refer to other cells in the table",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<table>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "table"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.tables",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g"
+        ]
+      },
+      {
+        "description": "Ensure that each table header in a data table refers to data cells",
+        "help": "All th elements and elements with role=columnheader/rowheader must have data cells they describe",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/th-has-data-cells?application=webdriverjs",
+        "id": "th-has-data-cells",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [
+              {
+                "data": null,
+                "id": "th-has-data-cells",
+                "impact": "serious",
+                "message": "All table header cells refer to data cells",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<table>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "table"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.tables",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g"
+        ]
+      }
+    ],
+    "testEngine": {
+      "name": "axe-core",
+      "version": "3.5.3"
+    },
+    "testEnvironment": {
+      "orientationAngle": 0,
+      "orientationType": "landscape-primary",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3809.87 Safari/537.36",
+      "windowHeight": 600,
+      "windowWidth": 800
+    },
+    "testRunner": {
+      "name": "axe"
+    },
+    "timestamp": "2020-05-12T15:50:20.925Z",
+    "toolOptions": {
+      "reporter": "v1"
+    },
+    "url": "file:///home/seluser/pages/1589186942193/index.html",
+    "violations": [
+      {
+        "description": "Ensures every id attribute value of active elements is unique",
+        "help": "IDs of active elements must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/duplicate-id-active?application=webdriverjs",
+        "id": "duplicate-id-active",
+        "impact": "serious",
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "edit-field",
+                "id": "duplicate-id-active",
+                "impact": "serious",
+                "message": "Document has active elements with the same id attribute: edit-field",
+                "relatedNodes": [
+                  {
+                    "html": "<a href=\"/marriage-allowance-application/confirm-email\" id=\"edit-field\">Change</a>",
+                    "target": [
+                      "tr:nth-child(3) > td:nth-child(3) > a"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "failureSummary": "Fix any of the following:\n  Document has active elements with the same id attribute: edit-field",
+            "html": "<a href=\"/marriage-allowance-application/divorce-enter-year\" id=\"edit-field\">Change</a>",
+            "impact": "serious",
+            "none": [],
+            "target": [
+              "tr:nth-child(2) > td:nth-child(3) > a"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag411"
+        ]
+      }
+    ]
+  }
+]

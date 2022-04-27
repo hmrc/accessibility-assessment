@@ -68,15 +68,6 @@ the [package.json](package.json) file and then follow the steps [here](#building
 of the currently installed chromedriver version before installing a new version. Further information on this npm config
 property can be found here https://www.npmjs.com/package/chromedriver
 
-## Updating page-accessibility-check.jar
->If there are no changes introduced to [page-accessibility-check](https://github.com/hmrc/page-accessibility-check) then this step can be skipped.
-
-To include any changes made to page-accessibility-check into accessibility-assessment Docker image:
-* Follow the instructions in page-accessibility-check [README.md](https://github.com/hmrc/page-accessibility-check#buildingdistributing-the-project)
-to generate a new jar.
-* Copy the jar from `page-accessibility-check/target/scala-2.12/` into 
-`accessibility-assessment/accessibility-assessment-service/app/resources/` folder.
-
 ## Building and running the image locally during development
 The repository uses a [Makefile](Makefile) to build and run the accessibility-assessment image. 
 The Dockerfile also includes a step to RUN npm tests when building the image. This should be sufficient to test the changes.
