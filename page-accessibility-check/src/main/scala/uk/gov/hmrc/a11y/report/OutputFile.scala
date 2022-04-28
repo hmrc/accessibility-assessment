@@ -17,12 +17,11 @@
 package uk.gov.hmrc.a11y.report
 
 import java.io.FileWriter
-
 import org.apache.commons.lang3.StringEscapeUtils.ESCAPE_JSON
 import org.apache.commons.lang3.StringEscapeUtils.ESCAPE_CSV
-import play.api.libs.json.{Json, OWrites}
+import play.api.libs.json.{Json, OWrites, Writes}
 import uk.gov.hmrc.a11y.config.TestInfo
-import uk.gov.hmrc.a11y.tools.Violation
+import uk.gov.hmrc.a11y.tools.{Axe, Violation, Vnu}
 
 object OutputFile extends Logger {
 
@@ -69,6 +68,15 @@ object OutputFile extends Logger {
   def closeFileWriter(): Unit =
     outputFileWriter.close()
 
+  case class ToolInfo(name: String, tool: String, toolType: String, version: String)
+
+  object ToolInfo {
+    implicit val toolInfoWrites: Writes[ToolInfo] = Json.writes[ToolInfo]
+  }
+
+  lazy val axe: ToolInfo = ToolInfo("Axe-core", "axe", "accessibility", Axe.axeVersion())
+  lazy val vnu: ToolInfo = ToolInfo("VNU", "vnu", "HTML Validator", Vnu.vnuVersion())
+
   def jsonOutput(testInfo: TestInfo, violations: List[Violation]): String =
-    new JsonReport().generate(testInfo, violations)
+    new JsonReport().generate(testInfo, violations, axe, vnu)
 }

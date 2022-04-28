@@ -18,6 +18,7 @@ package uk.gov.hmrc.a11y.report
 
 import play.api.libs.json.Json
 import uk.gov.hmrc.a11y.BaseSpec
+import uk.gov.hmrc.a11y.report.OutputFile.ToolInfo
 import uk.gov.hmrc.a11y.tools.Violation
 
 class JsonReportSpec extends BaseSpec {
@@ -329,7 +330,7 @@ class JsonReportSpec extends BaseSpec {
   "JsonReport generate" should {
     "return the count of all of the pages captured" in new TestSetup {
       val numberOfPagesInCapturedPagesFolder: Int = 2
-      val generatedReport: String                 = new JsonReport().generate(movementsTestInfo, allViolations)
+      val generatedReport: String                 = new JsonReport().generate(movementsTestInfo, allViolations, axe, vnu)
 
       val actualNumberOfPagesCaptured: Int = (Json.parse(generatedReport) \ "numberOfPagesCaptured").as[Int]
 
@@ -338,7 +339,7 @@ class JsonReportSpec extends BaseSpec {
 
     "return the count of all of the pages captured even when no violations are found" in new TestSetup {
       val numberOfPagesInCapturedPagesFolder: Int = 2
-      val generatedReport: String                 = new JsonReport().generate(movementsTestInfo, List.empty)
+      val generatedReport: String                 = new JsonReport().generate(movementsTestInfo, List.empty, axe, vnu)
 
       val actualNumberOfPagesCaptured: Int = (Json.parse(generatedReport) \ "numberOfPagesCaptured").as[Int]
 

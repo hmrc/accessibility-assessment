@@ -18,24 +18,13 @@ package uk.gov.hmrc.a11y.report
 
 import play.api.libs.json.{Json, Writes}
 import uk.gov.hmrc.a11y.config.TestInfo
-import uk.gov.hmrc.a11y.tools.{Axe, Violation, Vnu}
+import uk.gov.hmrc.a11y.report.OutputFile.ToolInfo
+import uk.gov.hmrc.a11y.tools.Violation
 
 class JsonReport {
 
-  def generate(testInfo: TestInfo, violations: List[Violation]): String = {
+  def generate(testInfo: TestInfo, violations: List[Violation], axe: ToolInfo, vnu: ToolInfo): String = {
 
-    val axe       = ToolInfo(
-      "Axe-core",
-      "axe",
-      "accessibility",
-      Axe.axeVersion()
-    )
-    val vnu       = ToolInfo(
-      "VNU",
-      "vnu",
-      "HTML Validator",
-      Vnu.vnuVersion()
-    )
     val axeReport = reportByTool(violations, axe)
     val vnuReport = reportByTool(violations, vnu)
     val report    = Report(
@@ -82,12 +71,6 @@ class JsonReport {
     val summary = Summary(violations.size, errorCount, infoCount)
     Tool(toolInfo.name, toolInfo.tool, toolInfo.toolType, toolInfo.version, summary, paths)
   }
-}
-
-case class ToolInfo(name: String, tool: String, toolType: String, version: String)
-
-object ToolInfo {
-  implicit val toolInfoWrites: Writes[ToolInfo] = Json.writes[ToolInfo]
 }
 
 case class Page(name: String, url: String, violationCount: Int, violations: List[Violation])
