@@ -17,6 +17,11 @@ dist
 /RUNNING_PID
 /.settings
 *.iws
+/page-accessibility-check/bulk-upload-*
+/page-accessibility-check/page-accessibility-check.iml
+/page-accessibility-check/project
+/page-accessibility-check/output
+
 **/.DS_Store
 
 # project specific
@@ -32,3 +37,5 @@ output/
 /pages/
 /test/elk/esdata/
 /accessibility-assessment-service/temp/
+/.bsp/
+/docker/files/accessibility-assessment-service

@@ -1,0 +1,2976 @@
+[
+  {
+    "inapplicable": [
+      {
+        "description": "Ensures every accesskey attribute value is unique",
+        "help": "accesskey attribute value must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/accesskeys?application=webdriverjs",
+        "id": "accesskeys",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "best-practice",
+          "cat.keyboard"
+        ]
+      },
+      {
+        "description": "Ensures <area> elements of image maps have alternate text",
+        "help": "Active <area> elements must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/area-alt?application=webdriverjs",
+        "id": "area-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "wcag244",
+          "wcag412",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures ARIA attributes are allowed for an element's role",
+        "help": "Elements must only use allowed ARIA attributes",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-allowed-attr?application=webdriverjs",
+        "id": "aria-allowed-attr",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures aria-hidden='true' is not present on the document body.",
+        "help": "aria-hidden='true' must not be present on the document body",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-hidden-body?application=webdriverjs",
+        "id": "aria-hidden-body",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures aria-hidden elements do not contain focusable elements",
+        "help": "ARIA hidden element must not contain focusable elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-hidden-focus?application=webdriverjs",
+        "id": "aria-hidden-focus",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures every ARIA input field has an accessible name",
+        "help": "ARIA input fields have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-input-field-name?application=webdriverjs",
+        "id": "aria-input-field-name",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensure aria-roledescription is only used on elements with an implicit or explicit role",
+        "help": "Use aria-roledescription on elements with a semantic role",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-roledescription?application=webdriverjs",
+        "id": "aria-roledescription",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures every ARIA toggle field has an accessible name",
+        "help": "ARIA toggle fields have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-toggle-field-name?application=webdriverjs",
+        "id": "aria-toggle-field-name",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures all ARIA attributes have valid values",
+        "help": "ARIA attributes must conform to valid values",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-valid-attr-value?application=webdriverjs",
+        "id": "aria-valid-attr-value",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures attributes that begin with aria- are valid ARIA attributes",
+        "help": "ARIA attributes must conform to valid names",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-valid-attr?application=webdriverjs",
+        "id": "aria-valid-attr",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+        "help": "autocomplete attribute must be used correctly",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/autocomplete-valid?application=webdriverjs",
+        "id": "autocomplete-valid",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.forms",
+          "wcag21aa",
+          "wcag135"
+        ]
+      },
+      {
+        "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+        "help": "Inline text spacing must be adjustable with custom stylesheets",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/avoid-inline-spacing?application=webdriverjs",
+        "id": "avoid-inline-spacing",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "wcag21aa",
+          "wcag1412"
+        ]
+      },
+      {
+        "description": "Ensures <blink> elements are not used",
+        "help": "<blink> elements are deprecated and must not be used",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/blink?application=webdriverjs",
+        "id": "blink",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag222",
+          "section508",
+          "section508.22.j"
+        ]
+      },
+      {
+        "description": "Ensures <dl> elements are structured correctly",
+        "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/definition-list?application=webdriverjs",
+        "id": "definition-list",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures <dt> and <dd> elements are contained by a <dl>",
+        "help": "<dt> and <dd> elements must be contained by a <dl>",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/dlitem?application=webdriverjs",
+        "id": "dlitem",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures each HTML document contains a non-empty <title> element",
+        "help": "Documents must have <title> element to aid in navigation",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/document-title?application=webdriverjs",
+        "id": "document-title",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag242"
+        ]
+      },
+      {
+        "description": "Ensures every id attribute value of active elements is unique",
+        "help": "IDs of active elements must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/duplicate-id-active?application=webdriverjs",
+        "id": "duplicate-id-active",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag411"
+        ]
+      },
+      {
+        "description": "Ensures every id attribute value used in ARIA and in labels is unique",
+        "help": "IDs used in ARIA and labels must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/duplicate-id-aria?application=webdriverjs",
+        "id": "duplicate-id-aria",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag411"
+        ]
+      },
+      {
+        "description": "Ensures form field does not have multiple label elements",
+        "help": "Form field should not have multiple label elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/form-field-multiple-labels?application=webdriverjs",
+        "id": "form-field-multiple-labels",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ]
+      },
+      {
+        "description": "Ensures <iframe> and <frame> elements contain the axe-core script",
+        "help": "Frames must be tested with axe-core",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/frame-tested?application=webdriverjs",
+        "id": "frame-tested",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.structure",
+          "review-item",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures <iframe> and <frame> elements contain a unique title attribute",
+        "help": "Frames must have a unique title attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/frame-title-unique?application=webdriverjs",
+        "id": "frame-title-unique",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures <iframe> and <frame> elements contain a non-empty title attribute",
+        "help": "Frames must have title attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/frame-title?application=webdriverjs",
+        "id": "frame-title",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag241",
+          "wcag412",
+          "section508",
+          "section508.22.i"
+        ]
+      },
+      {
+        "description": "Ensures every HTML document has a lang attribute",
+        "help": "<html> element must have a lang attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/html-has-lang?application=webdriverjs",
+        "id": "html-has-lang",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ]
+      },
+      {
+        "description": "Ensures the lang attribute of the <html> element has a valid value",
+        "help": "<html> element must have a valid value for the lang attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/html-lang-valid?application=webdriverjs",
+        "id": "html-lang-valid",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ]
+      },
+      {
+        "description": "Ensure that HTML elements with both valid lang and xml:lang attributes agree on the base language of the page",
+        "help": "HTML elements with lang and xml:lang must have the same base language",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/html-xml-lang-mismatch?application=webdriverjs",
+        "id": "html-xml-lang-mismatch",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ]
+      },
+      {
+        "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+        "help": "Images must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/image-alt?application=webdriverjs",
+        "id": "image-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensure image alternative is not repeated as text",
+        "help": "Alternative text of images should not be repeated as text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/image-redundant-alt?application=webdriverjs",
+        "id": "image-redundant-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures input buttons have discernible text",
+        "help": "Input buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/input-button-name?application=webdriverjs",
+        "id": "input-button-name",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures <input type=\"image\"> elements have alternate text",
+        "help": "Image buttons must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/input-image-alt?application=webdriverjs",
+        "id": "input-image-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures that every form element is not solely labeled using the title or aria-describedby attributes",
+        "help": "Form elements should have a visible label",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/label-title-only?application=webdriverjs",
+        "id": "label-title-only",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.forms",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures every form element has a label",
+        "help": "Form elements must have labels",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/label?application=webdriverjs",
+        "id": "label",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag412",
+          "wcag131",
+          "section508",
+          "section508.22.n"
+        ]
+      },
+      {
+        "description": "Ensures the banner landmark is at top level",
+        "help": "Banner landmark must not be contained in another landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-banner-is-top-level?application=webdriverjs",
+        "id": "landmark-banner-is-top-level",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the complementary landmark or aside is at top level",
+        "help": "Aside must not be contained in another landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-complementary-is-top-level?application=webdriverjs",
+        "id": "landmark-complementary-is-top-level",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the contentinfo landmark is at top level",
+        "help": "Contentinfo landmark must not be contained in another landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-contentinfo-is-top-level?application=webdriverjs",
+        "id": "landmark-contentinfo-is-top-level",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the document has at most one banner landmark",
+        "help": "Document must not have more than one banner landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-no-duplicate-banner?application=webdriverjs",
+        "id": "landmark-no-duplicate-banner",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the document has at most one contentinfo landmark",
+        "help": "Document must not have more than one contentinfo landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-no-duplicate-contentinfo?application=webdriverjs",
+        "id": "landmark-no-duplicate-contentinfo",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the document has a main landmark",
+        "help": "Document must have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-one-main?application=webdriverjs",
+        "id": "landmark-one-main",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures <marquee> elements are not used",
+        "help": "<marquee> elements are deprecated and must not be used",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/marquee?application=webdriverjs",
+        "id": "marquee",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag222"
+        ]
+      },
+      {
+        "description": "Ensures <meta http-equiv=\"refresh\"> is not used",
+        "help": "Timed refresh must not exist",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/meta-refresh?application=webdriverjs",
+        "id": "meta-refresh",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag2aaa",
+          "wcag221",
+          "wcag224",
+          "wcag325"
+        ]
+      },
+      {
+        "description": "Ensures <meta name=\"viewport\"> can scale a significant amount",
+        "help": "Users should be able to zoom and scale the text up to 500%",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/meta-viewport-large?application=webdriverjs",
+        "id": "meta-viewport-large",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.sensory-and-visual-cues",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
+        "help": "Zooming and scaling must not be disabled",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/meta-viewport?application=webdriverjs",
+        "id": "meta-viewport",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.sensory-and-visual-cues",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures <object> elements have alternate text",
+        "help": "<object> elements must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/object-alt?application=webdriverjs",
+        "id": "object-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+        "help": "Page must contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/page-has-heading-one?application=webdriverjs",
+        "id": "page-has-heading-one",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures all page content is contained by landmarks",
+        "help": "All page content must be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/region?application=webdriverjs",
+        "id": "region",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.keyboard",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures [role='img'] elements have alternate text",
+        "help": "[role='img'] elements have an alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/role-img-alt?application=webdriverjs",
+        "id": "role-img-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures the scope attribute is used correctly on tables",
+        "help": "scope attribute should be used correctly",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/scope-attr-valid?application=webdriverjs",
+        "id": "scope-attr-valid",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.tables",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Elements that have scrollable content should be accessible by keyboard",
+        "help": "Ensure that scrollable region has keyboard access",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/scrollable-region-focusable?application=webdriverjs",
+        "id": "scrollable-region-focusable",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "wcag2a",
+          "wcag211"
+        ]
+      },
+      {
+        "description": "Ensures that server-side image maps are not used",
+        "help": "Server-side image maps must not be used",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/server-side-image-map?application=webdriverjs",
+        "id": "server-side-image-map",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag211",
+          "section508",
+          "section508.22.f"
+        ]
+      },
+      {
+        "description": "Ensure all skip links have a focusable target",
+        "help": "The skip-link target should exist and be focusable",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/skip-link?application=webdriverjs",
+        "id": "skip-link",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.keyboard",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures svg elements with an img, graphics-document or graphics-symbol role have an accessible text",
+        "help": "svg elements with an img role have an alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/svg-img-alt?application=webdriverjs",
+        "id": "svg-img-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures tabindex attribute values are not greater than 0",
+        "help": "Elements should not have tabindex greater than zero",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/tabindex?application=webdriverjs",
+        "id": "tabindex",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.keyboard",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensure that tables do not have the same summary and caption",
+        "help": "The <caption> element should not contain the same text as the summary attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/table-duplicate-name?application=webdriverjs",
+        "id": "table-duplicate-name",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.tables",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensure that each cell in a table using the headers refers to another cell in that table",
+        "help": "All cells in a table element that use the headers attribute must only refer to other cells of that same table",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/td-headers-attr?application=webdriverjs",
+        "id": "td-headers-attr",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.tables",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g"
+        ]
+      },
+      {
+        "description": "Ensure that each table header in a data table refers to data cells",
+        "help": "All th elements and elements with role=columnheader/rowheader must have data cells they describe",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/th-has-data-cells?application=webdriverjs",
+        "id": "th-has-data-cells",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.tables",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g"
+        ]
+      },
+      {
+        "description": "Ensures lang attributes have valid values",
+        "help": "lang attribute must have a valid value",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/valid-lang?application=webdriverjs",
+        "id": "valid-lang",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.language",
+          "wcag2aa",
+          "wcag312"
+        ]
+      },
+      {
+        "description": "Ensures <video> elements have captions",
+        "help": "<video> elements must have captions",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/video-caption?application=webdriverjs",
+        "id": "video-caption",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag122",
+          "section508",
+          "section508.22.a"
+        ]
+      }
+    ],
+    "incomplete": [],
+    "passes": [
+      {
+        "description": "Ensures role attribute has an appropriate value for the element",
+        "help": "ARIA role must be appropriate for the element",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-allowed-role?application=webdriverjs",
+        "id": "aria-allowed-role",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main class=\"govuk-main-wrapper govuk-main-wrapper--auto-spacing\" id=\"main-content\" role=\"main\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#main-content"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/customs-movements/consignment-query\" role=\"button\" draggable=\"false\" class=\"govuk-button govuk-button--start\" data-module=\"govuk-button\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".govuk-button"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<svg class=\"govuk-button__start-icon\" xmlns=\"http://www.w3.org/2000/svg\" width=\"17.5\" height=\"19\" viewBox=\"0 0 33 40\" role=\"presentation\" focusable=\"false\">      <path fill=\"currentColor\" d=\"M0 0h13l20 20-20 20H0l20-20z\"></path>    </svg>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".govuk-button__start-icon"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures elements with ARIA roles have all required ARIA attributes",
+        "help": "Required ARIA attributes must be provided",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-required-attr?application=webdriverjs",
+        "id": "aria-required-attr",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-attr",
+                "impact": "critical",
+                "message": "All required ARIA attributes are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main class=\"govuk-main-wrapper govuk-main-wrapper--auto-spacing\" id=\"main-content\" role=\"main\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#main-content"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-attr",
+                "impact": "critical",
+                "message": "All required ARIA attributes are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/customs-movements/consignment-query\" role=\"button\" draggable=\"false\" class=\"govuk-button govuk-button--start\" data-module=\"govuk-button\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".govuk-button"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-attr",
+                "impact": "critical",
+                "message": "All required ARIA attributes are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<svg class=\"govuk-button__start-icon\" xmlns=\"http://www.w3.org/2000/svg\" width=\"17.5\" height=\"19\" viewBox=\"0 0 33 40\" role=\"presentation\" focusable=\"false\">      <path fill=\"currentColor\" d=\"M0 0h13l20 20-20 20H0l20-20z\"></path>    </svg>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".govuk-button__start-icon"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures elements with an ARIA role that require child roles contain them",
+        "help": "Certain ARIA roles must contain particular children",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-required-children?application=webdriverjs",
+        "id": "aria-required-children",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-children",
+                "impact": "critical",
+                "message": "Required ARIA children are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main class=\"govuk-main-wrapper govuk-main-wrapper--auto-spacing\" id=\"main-content\" role=\"main\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#main-content"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-children",
+                "impact": "critical",
+                "message": "Required ARIA children are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/customs-movements/consignment-query\" role=\"button\" draggable=\"false\" class=\"govuk-button govuk-button--start\" data-module=\"govuk-button\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".govuk-button"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-children",
+                "impact": "critical",
+                "message": "Required ARIA children are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<svg class=\"govuk-button__start-icon\" xmlns=\"http://www.w3.org/2000/svg\" width=\"17.5\" height=\"19\" viewBox=\"0 0 33 40\" role=\"presentation\" focusable=\"false\">      <path fill=\"currentColor\" d=\"M0 0h13l20 20-20 20H0l20-20z\"></path>    </svg>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".govuk-button__start-icon"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures elements with an ARIA role that require parent roles are contained by them",
+        "help": "Certain ARIA roles must be contained by particular parents",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-required-parent?application=webdriverjs",
+        "id": "aria-required-parent",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-parent",
+                "impact": "critical",
+                "message": "Required ARIA parent role present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main class=\"govuk-main-wrapper govuk-main-wrapper--auto-spacing\" id=\"main-content\" role=\"main\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#main-content"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-parent",
+                "impact": "critical",
+                "message": "Required ARIA parent role present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/customs-movements/consignment-query\" role=\"button\" draggable=\"false\" class=\"govuk-button govuk-button--start\" data-module=\"govuk-button\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".govuk-button"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-parent",
+                "impact": "critical",
+                "message": "Required ARIA parent role present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<svg class=\"govuk-button__start-icon\" xmlns=\"http://www.w3.org/2000/svg\" width=\"17.5\" height=\"19\" viewBox=\"0 0 33 40\" role=\"presentation\" focusable=\"false\">      <path fill=\"currentColor\" d=\"M0 0h13l20 20-20 20H0l20-20z\"></path>    </svg>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".govuk-button__start-icon"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures all elements with a role attribute use a valid value",
+        "help": "ARIA roles used must conform to valid values",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/aria-roles?application=webdriverjs",
+        "id": "aria-roles",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [],
+            "html": "<main class=\"govuk-main-wrapper govuk-main-wrapper--auto-spacing\" id=\"main-content\" role=\"main\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "fallbackrole",
+                "impact": "serious",
+                "message": "Only one role value used",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "invalidrole",
+                "impact": "critical",
+                "message": "ARIA role is valid",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "abstractrole",
+                "impact": "serious",
+                "message": "Abstract roles are not used",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "unsupportedrole",
+                "impact": "critical",
+                "message": "ARIA role is supported",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#main-content"
+            ]
+          },
+          {
+            "all": [],
+            "any": [],
+            "html": "<a href=\"/customs-movements/consignment-query\" role=\"button\" draggable=\"false\" class=\"govuk-button govuk-button--start\" data-module=\"govuk-button\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "fallbackrole",
+                "impact": "serious",
+                "message": "Only one role value used",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "invalidrole",
+                "impact": "critical",
+                "message": "ARIA role is valid",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "abstractrole",
+                "impact": "serious",
+                "message": "Abstract roles are not used",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "unsupportedrole",
+                "impact": "critical",
+                "message": "ARIA role is supported",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".govuk-button"
+            ]
+          },
+          {
+            "all": [],
+            "any": [],
+            "html": "<svg class=\"govuk-button__start-icon\" xmlns=\"http://www.w3.org/2000/svg\" width=\"17.5\" height=\"19\" viewBox=\"0 0 33 40\" role=\"presentation\" focusable=\"false\">      <path fill=\"currentColor\" d=\"M0 0h13l20 20-20 20H0l20-20z\"></path>    </svg>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "fallbackrole",
+                "impact": "serious",
+                "message": "Only one role value used",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "invalidrole",
+                "impact": "critical",
+                "message": "ARIA role is valid",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "abstractrole",
+                "impact": "serious",
+                "message": "Abstract roles are not used",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "unsupportedrole",
+                "impact": "critical",
+                "message": "ARIA role is supported",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".govuk-button__start-icon"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures buttons have discernible text",
+        "help": "Buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/button-name?application=webdriverjs",
+        "id": "button-name",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "Start now",
+                "id": "button-has-visible-text",
+                "impact": "critical",
+                "message": "Element has inner text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/customs-movements/consignment-query\" role=\"button\" draggable=\"false\" class=\"govuk-button govuk-button--start\" data-module=\"govuk-button\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".govuk-button"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+        "help": "Elements must have sufficient color contrast",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/color-contrast?application=webdriverjs",
+        "id": "color-contrast",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 5.51,
+                  "expectedContrastRatio": "3:1",
+                  "fgColor": "#626a6e",
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.51",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<span id=\"section-header\" class=\"govuk-caption-l\">Guidance</span>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#section-header"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "3:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h1 id=\"title\" class=\"govuk-heading-l\">Tell HMRC when goods you’re exporting arrive at or leave the UK port</h1>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#title"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "3:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<p id=\"description\" class=\"govuk-body-l govuk-!-margin-bottom-8\"> Use the CDS Exports Service to tell HMRC when the goods you’re exporting out of the EU have arrived at or left the UK port. </p>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#description"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "3:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 id=\"contents\" class=\"govuk-heading-m\">Contents</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#contents"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 5.16,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#1d70b8",
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.16",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"govuk-link\" href=\"#before-you-start\">Before you start</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "a[href$=\"\\#before-you-start\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 5.16,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#1d70b8",
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.16",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"govuk-link\" href=\"#information-you-need\">Information you need</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "a[href$=\"\\#information-you-need\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 5.16,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#1d70b8",
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.16",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"govuk-link\" href=\"#report-your-arrival-and-departure\">Report your arrival and departure</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".dashed-list-item:nth-child(3) > .govuk-link"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "3:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 class=\"govuk-heading-m\" id=\"before-you-start\">Before you start</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#before-you-start"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<p id=\"before-you-start-element-1\" class=\"govuk-body\">The goods must have already been <a class=\"govuk-link\" href=\"https://www.gov.uk/guidance/customs-declarations-for-goods-taken-out-of-the-eu\">declared to customs.</a></p>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#before-you-start-element-1"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 5.16,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#1d70b8",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.16",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"govuk-link\" href=\"https://www.gov.uk/guidance/customs-declarations-for-goods-taken-out-of-the-eu\">declared to customs.</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#before-you-start-element-1 > .govuk-link"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<p id=\"before-you-start-element-2\" class=\"govuk-body\">To use this service, you need a Government Gateway user ID and password linked to your EORI number.</p>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#before-you-start-element-2"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<p id=\"before-you-start-element-3\" class=\"govuk-body govuk-!-margin-bottom-8\">If you don’t have a user ID you can get one the first time you make a declaration.</p>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#before-you-start-element-3"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "3:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 class=\"govuk-heading-m\" id=\"information-you-need\">Information you need</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<p id=\"information-you-need-element-1\" class=\"govuk-body\">To use this service, you will need:</p>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need-element-1"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>HMRC approval to arrive and depart goods</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need-list > li:nth-child(1)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>the Declaration Unique Consignment Reference (DUCR)</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need-list > li:nth-child(2)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>the Master Unique Consignment Reference (MUCR) if your goods were consolidated into a bigger consignment</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need-list > li:nth-child(3)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>details of where you’re sending the export to and from</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need-list > li:nth-child(4)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "3:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 class=\"govuk-heading-m\" id=\"report-your-arrival-and-departure\">Report your arrival and departure</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#report-your-arrival-and-departure"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.58,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#0b0c0c",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.58",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"problems-with-service-notice\" class=\"govuk-inset-text\">Online services may be slow during busy times. Check if there are any <a class=\"govuk-link\" href=\"https://www.gov.uk/guidance/customs-declaration-service-service-availability-and-issues\">problems with this service.</a></div>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#problems-with-service-notice"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 5.16,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#1d70b8",
+                  "fontSize": "14.3pt (19px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.16",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"govuk-link\" href=\"https://www.gov.uk/guidance/customs-declaration-service-service-availability-and-issues\">problems with this service.</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#problems-with-service-notice > .govuk-link"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#00703c",
+                  "contrastRatio": 6.2,
+                  "expectedContrastRatio": "3:1",
+                  "fgColor": "#ffffff",
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.2",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/customs-movements/consignment-query\" role=\"button\" draggable=\"false\" class=\"govuk-button govuk-button--start\" data-module=\"govuk-button\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".govuk-button"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 5.16,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#1d70b8",
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.16",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"govuk-link app-c-back-to-top dont-print\" href=\"#contents\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".app-c-back-to-top"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143"
+        ]
+      },
+      {
+        "description": "Ensures every id attribute value is unique",
+        "help": "id attribute value must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/duplicate-id?application=webdriverjs",
+        "id": "duplicate-id",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "main-content",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main class=\"govuk-main-wrapper govuk-main-wrapper--auto-spacing\" id=\"main-content\" role=\"main\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#main-content"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "section-header",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<span id=\"section-header\" class=\"govuk-caption-l\">Guidance</span>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#section-header"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "title",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h1 id=\"title\" class=\"govuk-heading-l\">Tell HMRC when goods you’re exporting arrive at or leave the UK port</h1>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#title"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "description",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<p id=\"description\" class=\"govuk-body-l govuk-!-margin-bottom-8\"> Use the CDS Exports Service to tell HMRC when the goods you’re exporting out of the EU have arrived at or left the UK port. </p>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#description"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "contents",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 id=\"contents\" class=\"govuk-heading-m\">Contents</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#contents"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "contents-list",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<ol id=\"contents-list\" class=\"dashed-list\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#contents-list"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "before-you-start",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 class=\"govuk-heading-m\" id=\"before-you-start\">Before you start</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#before-you-start"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "before-you-start-element-1",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<p id=\"before-you-start-element-1\" class=\"govuk-body\">The goods must have already been <a class=\"govuk-link\" href=\"https://www.gov.uk/guidance/customs-declarations-for-goods-taken-out-of-the-eu\">declared to customs.</a></p>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#before-you-start-element-1"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "before-you-start-element-2",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<p id=\"before-you-start-element-2\" class=\"govuk-body\">To use this service, you need a Government Gateway user ID and password linked to your EORI number.</p>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#before-you-start-element-2"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "before-you-start-element-3",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<p id=\"before-you-start-element-3\" class=\"govuk-body govuk-!-margin-bottom-8\">If you don’t have a user ID you can get one the first time you make a declaration.</p>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#before-you-start-element-3"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "information-you-need",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 class=\"govuk-heading-m\" id=\"information-you-need\">Information you need</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "information-you-need-element-1",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<p id=\"information-you-need-element-1\" class=\"govuk-body\">To use this service, you will need:</p>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need-element-1"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "information-you-need-list",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<ul id=\"information-you-need-list\" class=\"govuk-list govuk-list--bullet govuk-!-margin-bottom-8\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need-list"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "report-your-arrival-and-departure",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 class=\"govuk-heading-m\" id=\"report-your-arrival-and-departure\">Report your arrival and departure</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#report-your-arrival-and-departure"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "problems-with-service-notice",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"problems-with-service-notice\" class=\"govuk-inset-text\">Online services may be slow during busy times. Check if there are any <a class=\"govuk-link\" href=\"https://www.gov.uk/guidance/customs-declaration-service-service-availability-and-issues\">problems with this service.</a></div>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#problems-with-service-notice"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "back-to-top",
+                "id": "duplicate-id",
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"back-to-top\" class=\"app-c-contents-list-with-body__link-container\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#back-to-top"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag411"
+        ]
+      },
+      {
+        "description": "Ensures headings have discernible text",
+        "help": "Headings must not be empty",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/empty-heading?application=webdriverjs",
+        "id": "empty-heading",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h1 id=\"title\" class=\"govuk-heading-l\">Tell HMRC when goods you’re exporting arrive at or leave the UK port</h1>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#title"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 id=\"contents\" class=\"govuk-heading-m\">Contents</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#contents"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 class=\"govuk-heading-m\" id=\"before-you-start\">Before you start</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#before-you-start"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 class=\"govuk-heading-m\" id=\"information-you-need\">Information you need</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 class=\"govuk-heading-m\" id=\"report-your-arrival-and-departure\">Report your arrival and departure</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#report-your-arrival-and-departure"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.name-role-value",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the order of headings is semantically correct",
+        "help": "Heading levels should only increase by one",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/heading-order?application=webdriverjs",
+        "id": "heading-order",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": 1,
+                "id": "heading-order",
+                "impact": "moderate",
+                "message": "Heading order valid",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h1 id=\"title\" class=\"govuk-heading-l\">Tell HMRC when goods you’re exporting arrive at or leave the UK port</h1>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#title"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": 2,
+                "id": "heading-order",
+                "impact": "moderate",
+                "message": "Heading order valid",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 id=\"contents\" class=\"govuk-heading-m\">Contents</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#contents"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": 2,
+                "id": "heading-order",
+                "impact": "moderate",
+                "message": "Heading order valid",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 class=\"govuk-heading-m\" id=\"before-you-start\">Before you start</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#before-you-start"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": 2,
+                "id": "heading-order",
+                "impact": "moderate",
+                "message": "Heading order valid",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 class=\"govuk-heading-m\" id=\"information-you-need\">Information you need</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": 2,
+                "id": "heading-order",
+                "impact": "moderate",
+                "message": "Heading order valid",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h2 class=\"govuk-heading-m\" id=\"report-your-arrival-and-departure\">Report your arrival and departure</h2>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#report-your-arrival-and-departure"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensure that links with the same accessible name serve a similar purpose",
+        "help": "Links with the same name have a similar purpose",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/identical-links-same-purpose?application=webdriverjs",
+        "id": "identical-links-same-purpose",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "before you start",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "",
+                    "pathname": "/home/seluser/pages/1586243903262/",
+                    "port": "",
+                    "protocol": "file:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a class=\"govuk-link\" href=\"#before-you-start\">Before you start</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "a[href$=\"\\#before-you-start\"]"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "information you need",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "",
+                    "pathname": "/home/seluser/pages/1586243903262/",
+                    "port": "",
+                    "protocol": "file:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a class=\"govuk-link\" href=\"#information-you-need\">Information you need</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "a[href$=\"\\#information-you-need\"]"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "report your arrival and departure",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "",
+                    "pathname": "/home/seluser/pages/1586243903262/",
+                    "port": "",
+                    "protocol": "file:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a class=\"govuk-link\" href=\"#report-your-arrival-and-departure\">Report your arrival and departure</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".dashed-list-item:nth-child(3) > .govuk-link"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "declared to customs",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "www.gov.uk",
+                    "pathname": "/guidance/customs-declarations-for-goods-taken-out-of-the-eu/",
+                    "port": "",
+                    "protocol": "http:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a class=\"govuk-link\" href=\"https://www.gov.uk/guidance/customs-declarations-for-goods-taken-out-of-the-eu\">declared to customs.</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#before-you-start-element-1 > .govuk-link"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "problems with this service",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "www.gov.uk",
+                    "pathname": "/guidance/customs-declaration-service-service-availability-and-issues/",
+                    "port": "",
+                    "protocol": "http:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a class=\"govuk-link\" href=\"https://www.gov.uk/guidance/customs-declaration-service-service-availability-and-issues\">problems with this service.</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#problems-with-service-notice > .govuk-link"
+            ]
+          },
+          {
+            "all": [
+              {
+                "data": {
+                  "name": "contents",
+                  "urlProps": {
+                    "filename": "",
+                    "hash": "",
+                    "hostname": "",
+                    "pathname": "/home/seluser/pages/1586243903262/",
+                    "port": "",
+                    "protocol": "file:",
+                    "search": {}
+                  }
+                },
+                "id": "identical-links-same-purpose",
+                "impact": "minor",
+                "message": "There are no other links with the same name, that go to a different URL",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<a class=\"govuk-link app-c-back-to-top dont-print\" href=\"#contents\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".app-c-back-to-top"
+            ]
+          }
+        ],
+        "tags": [
+          "wcag2aaa",
+          "wcag249",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the main landmark is at top level",
+        "help": "Main landmark must not be contained in another landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-main-is-top-level?application=webdriverjs",
+        "id": "landmark-main-is-top-level",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "role": "main"
+                },
+                "id": "landmark-is-top-level",
+                "impact": "moderate",
+                "message": "The main landmark is at the top level.",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main class=\"govuk-main-wrapper govuk-main-wrapper--auto-spacing\" id=\"main-content\" role=\"main\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#main-content"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures the document has at most one main landmark",
+        "help": "Document must not have more than one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-no-duplicate-main?application=webdriverjs",
+        "id": "landmark-no-duplicate-main",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "page-no-duplicate-main",
+                "impact": "moderate",
+                "message": "Document does not have more than one main landmark",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main class=\"govuk-main-wrapper govuk-main-wrapper--auto-spacing\" id=\"main-content\" role=\"main\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#main-content"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination",
+        "help": "Ensures landmarks are unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-unique?application=webdriverjs",
+        "id": "landmark-unique",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "accessibleText": null,
+                  "role": "main"
+                },
+                "id": "landmark-is-unique",
+                "impact": "moderate",
+                "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<main class=\"govuk-main-wrapper govuk-main-wrapper--auto-spacing\" id=\"main-content\" role=\"main\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#main-content"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "description": "Ensures links have discernible text",
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/link-name?application=webdriverjs",
+        "id": "link-name",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"govuk-link\" href=\"#before-you-start\">Before you start</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[href$=\"\\#before-you-start\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"govuk-link\" href=\"#information-you-need\">Information you need</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[href$=\"\\#information-you-need\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"govuk-link\" href=\"#report-your-arrival-and-departure\">Report your arrival and departure</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".dashed-list-item:nth-child(3) > .govuk-link"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"govuk-link\" href=\"https://www.gov.uk/guidance/customs-declarations-for-goods-taken-out-of-the-eu\">declared to customs.</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#before-you-start-element-1 > .govuk-link"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"govuk-link\" href=\"https://www.gov.uk/guidance/customs-declaration-service-service-availability-and-issues\">problems with this service.</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#problems-with-service-notice > .govuk-link"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a class=\"govuk-link app-c-back-to-top dont-print\" href=\"#contents\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".app-c-back-to-top"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "wcag244",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures that lists are structured correctly",
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/list?application=webdriverjs",
+        "id": "list",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [],
+            "html": "<ol id=\"contents-list\" class=\"dashed-list\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "only-listitems",
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#contents-list"
+            ]
+          },
+          {
+            "all": [],
+            "any": [],
+            "html": "<ul id=\"information-you-need-list\" class=\"govuk-list govuk-list--bullet govuk-!-margin-bottom-8\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "only-listitems",
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#information-you-need-list"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures <li> elements are used semantically",
+        "help": "<li> elements must be contained in a <ul> or <ol>",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/listitem?application=webdriverjs",
+        "id": "listitem",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li class=\"dashed-list-item\"><a class=\"govuk-link\" href=\"#before-you-start\">Before you start</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".dashed-list-item:nth-child(1)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li class=\"dashed-list-item\"><a class=\"govuk-link\" href=\"#information-you-need\">Information you need</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".dashed-list-item:nth-child(2)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li class=\"dashed-list-item\"><a class=\"govuk-link\" href=\"#report-your-arrival-and-departure\">Report your arrival and departure</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".dashed-list-item:nth-child(3)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>HMRC approval to arrive and depart goods</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need-list > li:nth-child(1)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>the Declaration Unique Consignment Reference (DUCR)</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need-list > li:nth-child(2)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>the Master Unique Consignment Reference (MUCR) if your goods were consolidated into a bigger consignment</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need-list > li:nth-child(3)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>details of where you’re sending the export to and from</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#information-you-need-list > li:nth-child(4)"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      }
+    ],
+    "testEngine": {
+      "name": "axe-core",
+      "version": "3.5.3"
+    },
+    "testEnvironment": {
+      "orientationAngle": 0,
+      "orientationType": "landscape-primary",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3809.87 Safari/537.36",
+      "windowHeight": 600,
+      "windowWidth": 800
+    },
+    "testRunner": {
+      "name": "axe"
+    },
+    "timestamp": "2020-05-12T15:54:37.503Z",
+    "toolOptions": {
+      "reporter": "v1"
+    },
+    "url": "file:///home/seluser/pages/1586243903262/index.html",
+    "violations": []
+  }
+]
