@@ -25,10 +25,10 @@ import uk.gov.hmrc.a11y.tools.{Axe, Violation, Vnu}
 
 object OutputFile extends Logger {
 
-  val currentDirectoryPath: String = s"${System.getProperty("user.dir")}"
+  lazy val currentDirectoryPath: String = s"${System.getProperty("user.dir")}"
 
-  val reportFileName   = s"accessibility-output-${System.currentTimeMillis / 1000}-json.log"
-  val outputFileWriter = new FileWriter(s"$currentDirectoryPath/output/$reportFileName", true)
+  lazy val reportFileName   = s"accessibility-output-${System.currentTimeMillis / 1000}-json.log"
+  lazy val outputFileWriter = new FileWriter(s"$currentDirectoryPath/output/$reportFileName", true)
 
   //  refactor this to use writeToFile method once we understand FluentBit log setup in Build Jenkins
   def writeOutput(violationsList: List[Violation]): Unit = {
