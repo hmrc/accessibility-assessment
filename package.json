@@ -4,7 +4,8 @@
   "description": "Surfaces the state of the accessibility-assessment container.",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "audit": "better-npm-audit audit"
   },
   "author": "",
   "license": "ISC",
@@ -21,5 +22,8 @@
     "@axe-core/cli": "4.3.2",
     "axe-core": "4.3.5",
     "vnu-jar": "21.10.12"
+  },
+  "devDependencies": {
+    "better-npm-audit": "^3.7.3"
   }
 }
