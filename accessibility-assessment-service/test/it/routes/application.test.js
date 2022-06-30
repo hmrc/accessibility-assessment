@@ -57,4 +57,20 @@ describe('application', () => {
             .send({testSuite: "awesome-tests-a11y-tests"});
         expect(res.statusCode).toEqual(400)
     });
+
+    it("should accept page artifacts as a zip file", async () => {
+        const res = await request(app)
+            .post('/api/app/upload-page')
+            .attach('zip', path.join(config.testResourcesDir, '1654074746541.zip'))
+            expect(res.status).toEqual(201)
+    });
+
+    it("should error when page artifacts zip file attachment 'key' is not named 'zip'", async () => {
+        const res = await request(app)
+            .post('/api/app/upload-page')
+            .attach('zip-test', path.join(config.testResourcesDir, '1654074746541.zip'))
+            expect(res.statusCode).toEqual(400)
+            expect(res.text).toContain("No pages zip file present in request.")
+    });
+
 });

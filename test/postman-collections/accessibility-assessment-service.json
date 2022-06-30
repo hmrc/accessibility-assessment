@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "d3550d2f-4cc6-4468-9d7f-fe5e57103a57",
+		"_postman_id": "000f0156-4848-4e64-8193-359c4f1c51c8",
 		"name": "Accessibility Assessment Tests",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3789493"
 	},
 	"item": [
 		{
@@ -375,6 +376,42 @@
 					"path": [
 						"api",
 						"capture-page"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Page Zip",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "zip",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6010/api/app/upload-page",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6010",
+					"path": [
+						"api",
+						"app",
+						"upload-page"
 					]
 				}
 			},

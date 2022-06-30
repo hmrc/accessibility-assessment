@@ -20,7 +20,7 @@ is available at http://localhost:6010.
 
 ### Endpoints
 Below is the list of endpoints exposed by the accessibility-assessment-service. The example request and responses are 
-generated using Postman. See [Postman collection](#Postman Collection) section for testing the service with Postman.   
+generated using Postman. See [Postman collection](DEVELOPMENT.md#postman-collection) section for testing the service with Postman.   
 
 #### GET /api/status
 Returns the status of the accessibility-assessment container. The status can be one of: 
