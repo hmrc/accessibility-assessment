@@ -1,5 +1,5 @@
 ARG DOCKERHUB=dockerhub.tax.service.gov.uk
-FROM ${DOCKERHUB}/selenium/node-chrome:3.141.59-20201119
+FROM ${DOCKERHUB}/selenium/node-chrome:103.0-20220706
 
 ENV CAPTURE_ALL_PAGES false
 ENV APP_PORT 6010
@@ -43,6 +43,10 @@ RUN   cd ${HOME} \
       # The name of the shell script should match the invocation from page-accessibility-check.
       && sudo echo -e '#!/bin/bash\njava -jar ${HOME}/accessibility-assessment-service/node_modules/vnu-jar/build/dist/vnu.jar "$@"' > ${HOME}/bin/vnu \
       && sudo echo -e '#!/bin/bash\n cd ${HOME}/accessibility-assessment-service;npx axe "$@"' > ${HOME}/bin/axeRunner \
+      # A breaking change was introduced in selenium-webdriver 4.3.1. removing chrome.setDefaultService
+      # The below used selenium-webdriver 4.3.0 is used to resolve this issue so axe can run.
+      # Further info: https://github.com/dequelabs/axe-core-npm/issues/538#issuecomment-1177804416
+      && npm install selenium-webdriver@4.3.0 --save-exact \
       # makes axe and vnu shell scripts executable
       && chmod +x ${HOME}/bin/vnu \
       && chmod +x ${HOME}/bin/axeRunner \
