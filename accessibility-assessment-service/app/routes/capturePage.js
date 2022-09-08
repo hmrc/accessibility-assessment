@@ -45,6 +45,12 @@ router.post('/', (req, res, next) => {
         return res.status(400).send({error: "URL already captured."})
     }
 
+    if(urlIsNotLocalhost()) {
+        logger.log('WARN', `URL:${body.pageURL} is not using localhost. This page will not be captured.`)
+        exclude(body.pageURL)
+        return res.status(400).send({error: "URL is not using localhost. This page will not be captured."})
+    }
+
     for (var assetError in logData.errors) {
         error(logData.errors[assetError].failedUrl, body.pageURL)
     }
@@ -89,6 +95,11 @@ router.post('/', (req, res, next) => {
 
     function urlIsAlreadyCapturedAndDoNotCaptureAllPages() {
         return global.capturedUrls.includes(body.pageURL) && !config.captureAllPages
+    }
+
+    function urlIsNotLocalhost() {
+        let localhostRegEx = RegExp('http:\\/\\/localhost:[0-9]{4}\\/.*');
+        return !localhostRegEx.test(body.pageURL)
     }
 })
 

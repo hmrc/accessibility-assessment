@@ -99,6 +99,21 @@ describe('capturePage', () => {
         expect(global.excludedUrls).toEqual(["http://localhost:1234/simple/page/capture"])
     });
 
+    it("should not capture a page with URL not using localhost", async () => {
+        const res = await request(app)
+            .post('/api/capture-page')
+            .set('Content-Type', 'application/json')
+            .send({
+                pageURL: "http://local:1234/my-page",
+                pageHTML: "<html><head><title>Some title</title></head><main>The contents of the page</main></html>",
+                timestamp: "0000000002",
+                files: {"file1": "some contents"}
+            })
+        expect(res.statusCode).toEqual(400)
+        expect(global.status).toEqual('READY')
+        expect(global.excludedUrls).toEqual(["http://local:1234/my-page"])
+    });
+
     it("should not capture js assets for a page", async () => {
         const res = await request(app)
             .post('/api/capture-page')
