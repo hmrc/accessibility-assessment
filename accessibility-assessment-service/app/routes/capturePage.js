@@ -46,9 +46,9 @@ router.post('/', (req, res, next) => {
     }
 
     if(urlIsNotLocalhost()) {
-        logger.log('WARN', `URL:${body.pageURL} URL is not localhost. This page will not be captured.`)
+        logger.log('WARN', `URL:${body.pageURL} is not using localhost. This page will not be captured.`)
         exclude(body.pageURL)
-        return res.status(400).send({error: "URL is not localhost. This page will not be captured."})
+        return res.status(400).send({error: "URL is not using localhost. This page will not be captured."})
     }
 
     for (var assetError in logData.errors) {

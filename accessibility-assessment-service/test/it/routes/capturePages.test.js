@@ -99,7 +99,7 @@ describe('capturePage', () => {
         expect(global.excludedUrls).toEqual(["http://localhost:1234/simple/page/capture"])
     });
 
-    it("should not capture a page with URL not localhost", async () => {
+    it("should not capture a page with URL not using localhost", async () => {
         const res = await request(app)
             .post('/api/capture-page')
             .set('Content-Type', 'application/json')
