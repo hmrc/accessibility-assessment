@@ -98,7 +98,7 @@ router.post('/', (req, res, next) => {
     }
 
     function urlIsNotLocalhost() {
-        let localhostRegEx = RegExp('http:\\/\\/localhost:[0-9]{4}\\/.*');
+        let localhostRegEx = RegExp('http:\\/\\/localhost:.*');
         return !localhostRegEx.test(body.pageURL)
     }
 })
