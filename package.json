@@ -22,8 +22,8 @@
   },
   "devDependencies": {
     "better-npm-audit": "^3.7.3",
-    "node-sass": "^7.0.1",
     "jest": "^27.3.0",
+    "node-sass": "^7.0.3",
     "supertest": "^6.1.3"
   }
 }
