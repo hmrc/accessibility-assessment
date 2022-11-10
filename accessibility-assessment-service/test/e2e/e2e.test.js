@@ -104,7 +104,7 @@ describe('accessibility-assessment-service', () => {
                 expect(JSON.stringify(axe)).toContain('Document has more than one main landmark')
                 //violation from VNU
                 expect(JSON.stringify(vnu)).toContain('A document must not include more than one visible “main” element.')
-                expect(axe['version']).toEqual('4.4.3')
+                expect(axe['version']).toEqual('4.5.1')
                 expect(vnu['version']).toEqual('21.10.12')
                 //page URL
                 expect(axe['paths'][0]['pages'][0]['url']).toContain('https://build.tax.service.gov.uk/job/ACE/job/awesome-tests-a11y-tests/19/')

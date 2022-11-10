@@ -16,8 +16,8 @@
     "express-fileupload": "^1.4.0",
     "rimraf": "^3.0.2",
     "pug": "^3.0.1",
-    "@axe-core/cli": "4.4.3",
-    "axe-core": "4.4.3",
+    "@axe-core/cli": "4.5.1",
+    "axe-core": "4.5.1",
     "vnu-jar": "21.10.12"
   },
   "devDependencies": {
