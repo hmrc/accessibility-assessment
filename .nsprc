@@ -1,3 +1,4 @@
 {
-  "https://github.com/advisories/GHSA-hrpp-h998-j3pp": "qs: devDependency, no risk given our usage"
+  "GHSA-hrpp-h998-j3pp": "qs: devDependency, no risk given our usage",
+  "GHSA-9c47-m6qq-7p4h": "json5: devDependency, no risk given our usage"
 }
