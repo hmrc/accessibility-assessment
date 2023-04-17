@@ -321,6 +321,9 @@ e.g. `sbt -Dbrowser='chrome' -Denvironment='local' -Daccessibility.test=true 'te
    Depending on the number of pages being assessed this can take a little while.
    You can find out the status of the accessibility-assessment at anytime by [querying the status endpoint](#get-apistatus).
 
+> **Using browser docker images**
+> 
+> When running tests using a Chrome, Firefox or Edge docker container, the port `6010` must manually be mapped in your browser docker container script for the accessibility assessment to be reachable. [An example of this can be seen here](https://github.com/hmrc/platform-example-ui-journey-tests/blob/main/run_browser_with_docker.sh#L23).
 
 4. Finally, [get the report](#get-apireport) to see any violations which have been found.
 5. See [troubleshooting accessibility-assessment locally](DEVELOPMENT.md#troubleshooting-accessibility-assessment-locally) 
