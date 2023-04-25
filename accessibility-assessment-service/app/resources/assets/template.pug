@@ -7,6 +7,7 @@ html(lang="en")
     meta(charset="UTF-8")
     title HMRC Accessibility report for #{original.testSuite}
     style=assets.stylesheet
+    link(rel='stylesheet', href='https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css')
   body
     h1 HMRC Accessibility report for #{original.testSuite}
     p Get some help from our latest #[+link('report documentation','')].
@@ -46,7 +47,7 @@ html(lang="en")
              a(href="#" + tool.techName)= tool.name
       each tool in tools
         div.revealed-by-tab(id=tool.techName)
-          table.violations
+          table(id=tool.techName + '-table').violations
             thead
               tr
                 th.path URL Path #[+link('(?)','#url-path')]
@@ -100,3 +101,14 @@ html(lang="en")
                       td.info
                         span.info #{violation.furtherInformation}
     script!=assets.javascript
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    script(src='https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js')
+    script.
+        $(document).ready(function() {
+            $('#axe-table').DataTable();
+        });
+    script.
+        $(document).ready(function() {
+            $('#vnu-table').DataTable();
+        });
