@@ -6,7 +6,7 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     title HMRC Accessibility report for #{original.testSuite}
-    style=assets.stylesheet
+    style!=assets.stylesheet
   body
     h1 HMRC Accessibility report for #{original.testSuite}
     p Get some help from our latest #[+link('report documentation','')].
@@ -46,7 +46,7 @@ html(lang="en")
              a(href="#" + tool.techName)= tool.name
       each tool in tools
         div.revealed-by-tab(id=tool.techName)
-          table.violations
+          table(id=tool.techName + '-table').violations
             thead
               tr
                 th.path URL Path #[+link('(?)','#url-path')]
@@ -100,3 +100,7 @@ html(lang="en")
                       td.info
                         span.info #{violation.furtherInformation}
     script!=assets.javascript
+
+    script.
+      $('#axe-table').DataTable();
+      $('#vnu-table').DataTable();
