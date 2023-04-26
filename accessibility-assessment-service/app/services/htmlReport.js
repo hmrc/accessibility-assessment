@@ -54,7 +54,11 @@ const includeJs = model => (new Promise((res, rej) => {
     } else {
       const updatedModel = Object.assign({}, model);
       updatedModel.assets = Object.assign({}, model.assets, {
-        javascript: contents
+        javascript: [
+	  contents,
+	  fs.readFileSync(path.join(`${config.assetsDir}`, 'jquery.1.12.2.min.js'), 'utf8'),
+	  fs.readFileSync(path.join(`${config.assetsDir}`, 'jquery.dataTables.1.13.4.min.js'), 'utf8'),
+	].join('\n\n')
       })
       res(updatedModel)
     }
@@ -69,7 +73,9 @@ const includeSass = model => (new Promise((res, rej) => {
         if (err) {
           rej(err)
         } else {
-          res(result.css.toString().split('\n').join(''))
+          res(result.css.toString().split('\n').join('')
+		  + '\n\n'
+		  + fs.readFileSync(path.join(`${config.assetsDir}`, 'jquery.dataTables.1.13.4.min.css')))
         }
       })
   })
