@@ -52,6 +52,7 @@ router.post('/', (req, res, next) => {
     }
 
     for (var assetError in logData.errors) {
+        logger.log('WARN', `Asset not captured: ${logData.errors[assetError].url} on URL:${body.pageURL}.`)
         error(logData.errors[assetError].failedUrl, body.pageURL)
     }
 
