@@ -73,28 +73,6 @@ body {
   }
 }
 
-.button {
-  margin-right:10px;
-}
-
-.violations--hide-non-errors, .violations--hide-known-issues {
-  .violation--known-info, .violation--known-warning {
-    display: none
-  }
-}
-
-.violations--hide-non-errors {
-  .violation--info, .violations--warning {
-    display: none
-  }
-}
-
-.violations--hide-known-issues {
-  .violation--known-error {
-    display: none
-  }
-}
-
 .js-enabled {
   .hidden-waiting-for-tab-activation {
     display: none;
