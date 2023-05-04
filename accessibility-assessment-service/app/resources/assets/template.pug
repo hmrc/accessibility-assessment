@@ -35,6 +35,12 @@ html(lang="en")
               dd=tool.version
 
     article
+      p.test Show only errors
+        input(type="checkbox", name="chk_box_show_only_errors")
+
+      p.test Hide known issues
+        input(type="checkbox", name="chk_box_hide_known")
+
       button(class='button show-error') Show Only Errors
       button(class='button hide-known-issues') Hide Known Issues
       button(class='button show-all') Show All
@@ -52,6 +58,8 @@ html(lang="en")
                 th.path URL Path #[+link('(?)','#url-path')]
                 if tool.techName == 'axe'
                   th.code Code (axe docs) #[+link('(?)','#code-axe-docs')]
+                if tool.techName == 'vnu'
+                  th.hide-column
                 th.description Description #[+link('(?)','#description')]
                 th.snippet Snippet #[+link('(?)','#snippet')]
                 th.alert Alert Level #[+link('(?)','#alert-level')]
@@ -70,6 +78,8 @@ html(lang="en")
                       if tool.techName == 'axe'
                         td.code
                           a(href=violation.helpUrl,target='_blank') #{violation.code}
+                      if tool.techName == 'vnu'
+                        td.hide-column
                       td.description=violation.description
                       td.snippet
                         span.code=violation.snippet
@@ -100,7 +110,3 @@ html(lang="en")
                       td.info
                         span.info #{violation.furtherInformation}
     script!=assets.javascript
-
-    script.
-      $('#axe-table').DataTable();
-      $('#vnu-table').DataTable();

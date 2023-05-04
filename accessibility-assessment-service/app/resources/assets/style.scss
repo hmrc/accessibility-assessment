@@ -162,6 +162,11 @@ table {
   th, td {
     padding: 10px;
   }
+
+  td.hide-column {
+    display: none;
+  }
+
 }
 .severity {
   $foreground-red: #942514;
