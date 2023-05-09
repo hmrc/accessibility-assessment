@@ -43,14 +43,14 @@ html(lang="en")
              a(href="#" + tool.techName)= tool.name
       each tool in tools
         div.revealed-by-tab(id=tool.techName)
-          table(id=tool.techName + '-table').violations
+          table(id=tool.techName + 'Table', class='order-column hover')
             thead
               tr
                 th.path URL Path #[+link('(?)','#url-path')]
                 if tool.techName == 'axe'
                   th.code Code (axe docs) #[+link('(?)','#code-axe-docs')]
                 if tool.techName == 'vnu'
-                  th.hide-column
+                  th
                 th.description Description #[+link('(?)','#description')]
                 th.snippet Snippet #[+link('(?)','#snippet')]
                 th.alert Alert Level #[+link('(?)','#alert-level')]
@@ -70,7 +70,7 @@ html(lang="en")
                         td.code
                           a(href=violation.helpUrl,target='_blank') #{violation.code}
                       if tool.techName == 'vnu'
-                        td.hide-column
+                        td
                       td.description=violation.description
                       td.snippet
                         span.code=violation.snippet

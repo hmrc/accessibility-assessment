@@ -124,6 +124,12 @@ body {
   }
 }
 
+.filter {
+  display: inline-block;
+  margin: 2px 10px;
+  padding-left: 20px;
+}
+
 table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -139,10 +145,6 @@ table {
 
   th, td {
     padding: 10px;
-  }
-
-  td.hide-column {
-    display: none;
   }
 
 }
@@ -177,4 +179,10 @@ table {
       background: $background-red;
     }
   }
+}
+
+/* fix for dataTables.net styling issue */
+table.dataTable {
+  margin-top: 20px !important;
+  width: 100% !important;
 }
