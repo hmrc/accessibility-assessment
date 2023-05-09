@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "000f0156-4848-4e64-8193-359c4f1c51c8",
+		"_postman_id": "cf307862-98e5-4cb3-b243-c9733edf3e3d",
 		"name": "Accessibility Assessment Tests",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "3789493"
@@ -266,7 +266,7 @@
 			"response": []
 		},
 		{
-			"name": "Page Capture (All Severities)",
+			"name": "Page Capture (All Severities & Known Issue)",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -277,7 +277,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"pageURL\": \"http://localhost:1234/simple/page/{{$randomLoremWord}}\",\n    \"pageHTML\": \"<html><head><title>Some title</title><style>body{background-color:black;} .cbanner-govuk-width-container{margin-right:max(15px, calc(15px + env(safe-area-inset-right)));margin-left:max(15px, calc(15px + env(safe-area-inset-left)))}}@media (min-width: 40.0625em){.cbanner-govuk-width-container{margin-right:30px;margin-left:30px} .test {color:white;background-color:orange;font-size:8px;margin-left:0;}.organisation-logo {background: url(../images/crests/hmrc_crest_18px.png) 5px center no-repeat; padding: 3px 0 3px 38px;}</style></head><div class='logo'><span class='organisation-logo organisation-logo-medium'> HM Revenue &amp; Customs </span></div><main>The contents of the page</main><main><h3></h3>The contents of the page <img src=''/></main></html>\",\n    \"timestamp\": \"{{$timestamp}}\",\n    \"files\": { \"file1\": \"some contents\" } \n}"
+					"raw": "{\n    \"pageURL\": \"http://localhost:1234/simple/page/{{$randomLoremWord}}\",\n    \"pageHTML\": \"<html><head><title>Some title</title><style>body{background-color:black;} .cbanner-govuk-width-container{margin-right:max(15px, calc(15px + env(safe-area-inset-right)));margin-left:max(15px, calc(15px + env(safe-area-inset-left)))}}@media (min-width: 40.0625em){.cbanner-govuk-width-container{margin-right:30px;margin-left:30px} .test {color:white;background-color:orange;font-size:8px;margin-left:0;}.organisation-logo {background: url(../images/crests/hmrc_crest_18px.png) 5px center no-repeat; padding: 3px 0 3px 38px;}</style></head><div class='logo'><span class='organisation-logo organisation-logo-medium'> HM Revenue &amp; Customs </span></div><main>The contents of the page</main><main><h3></h3>The contents of the page <img src=''/><input class='form-control' id='verifier_IREFFREGDATE_MONTH' name='verifier_IREFFREGDATE_MONTH' type='number' pattern='[0-9]*' value=''><div id='accordion-incorrect-details-content-1' class='govuk-accordion__section-content' aria-labelledby='accordion-incorrect-details-heading-1'><table><tr role='test-row'><td role='test-data'>Test</td></tr><table></main></html>\",\n    \"timestamp\": \"{{$timestamp}}\",\n    \"files\": { \"file1\": \"some contents\" } \n}"
 				},
 				"url": {
 					"raw": "http://localhost:6010/api/capture-page",
