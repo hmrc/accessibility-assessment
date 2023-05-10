@@ -60,7 +60,7 @@ push_experimental_tag: ## Push latest experimental tag to artifactory
 prep_version_incrementor:
 	@echo "Renaming requirements to prevent pipenv trying to convert it"
 	@echo "Installing version-incrementor with pipenv"
-	@pip install pipenv --upgrade
+	@pip install --index-url https://artefacts.tax.service.gov.uk/artifactory/api/pypi/pips/simple pipenv --upgrade
 	@pipenv --python $(PYTHON_VERSION)
 	@pipenv run pip install -i https://artefacts.tax.service.gov.uk/artifactory/api/pypi/pips/simple 'version-incrementor<2'
 
