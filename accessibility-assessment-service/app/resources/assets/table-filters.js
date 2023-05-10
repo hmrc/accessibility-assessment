@@ -1,11 +1,11 @@
 $(document).ready(function () {
     const axeTable = $('#axeTable').DataTable(
         {
-            "pageLength": 100,
+            pageLength: 100,
         },
     ),
     vnuTable = $('#vnuTable').DataTable({
-        "pageLength": 100,
+        pageLength: 100,
         columnDefs: [
             {
                 target: 1,
@@ -18,24 +18,6 @@ $(document).ready(function () {
     function createCheckboxFilter(elementId, label) {
         return $(`<div class='filter'><label for='${elementId}'>${label}</label><input type='checkbox' id='${elementId}'/></div>`);
     }
-
-    const axeContainer = $("#axeTable_wrapper");
-    const axeShowOnlyErrorsFilter = createCheckboxFilter('axe_show_only_errors', 'Show only errors');
-    const axeHideKnownIssuesFilter = createCheckboxFilter('axe_hide_known_issues', 'Hide known issues');
-    axeContainer.prepend(axeShowOnlyErrorsFilter);
-    axeContainer.prepend(axeHideKnownIssuesFilter);
-
-    axeShowOnlyErrorsFilter.change(function (event) {filterTableErrors(event, axeTable);});
-    axeHideKnownIssuesFilter.change(function (event) { filterTableKnownIssues(event, axeTable);});
-
-    const vnuContainer = $("#vnuTable_wrapper");
-    const vnuShowOnlyErrorsFilter = createCheckboxFilter('vnu_show_only_errors', 'Show only errors');
-    const vnuHideKnownIssuesFilter = createCheckboxFilter('vnu_hide_known_issues', 'Hide known issues');
-    vnuContainer.prepend(vnuShowOnlyErrorsFilter);
-    vnuContainer.prepend(vnuHideKnownIssuesFilter);
-
-    vnuShowOnlyErrorsFilter.change(function (event) {filterTableErrors(event, vnuTable);});
-    vnuHideKnownIssuesFilter.change(function (event) {filterTableKnownIssues(event, vnuTable);});
 
     function filterTableKnownIssues(event, table) {
         const hideKnownIssuesChecked = event.target.checked;
@@ -50,5 +32,23 @@ $(document).ready(function () {
         const searchValue = toggleErrorsChecked ? 'ERROR' : '';
         table.column(4).search(searchValue).draw();
     }
+
+    const axeSearchFilter = $("#axeTable_filter");
+    const axeShowOnlyErrorsFilter = createCheckboxFilter('axe_show_only_errors', 'Show only errors');
+    const axeHideKnownIssuesFilter = createCheckboxFilter('axe_hide_known_issues', 'Hide known issues');
+    axeSearchFilter.prepend(axeShowOnlyErrorsFilter);
+    axeSearchFilter.prepend(axeHideKnownIssuesFilter);
+
+    axeShowOnlyErrorsFilter.change( (event) => filterTableErrors(event, axeTable));
+    axeHideKnownIssuesFilter.change( (event) => filterTableKnownIssues(event, axeTable));
+
+    const vnuSearchFilter = $("#vnuTable_filter");
+    const vnuShowOnlyErrorsFilter = createCheckboxFilter('vnu_show_only_errors', 'Show only errors');
+    const vnuHideKnownIssuesFilter = createCheckboxFilter('vnu_hide_known_issues', 'Hide known issues');
+    vnuSearchFilter.prepend(vnuShowOnlyErrorsFilter);
+    vnuSearchFilter.prepend(vnuHideKnownIssuesFilter);
+
+    vnuShowOnlyErrorsFilter.change( (event) => filterTableErrors(event, vnuTable));
+    vnuHideKnownIssuesFilter.change( (event) => filterTableKnownIssues(event, vnuTable));
 
 });
