@@ -43,19 +43,4 @@ document.querySelector('body').classList.add('js-enabled')
     isFirstTab = false
   })
 
-  document.querySelector('.show-error').addEventListener('click', (e) => {
-    document.querySelectorAll('.violations').forEach(violationTable =>
-        violationTable.classList.add('violations--hide-non-errors'))
-  })
-
-  document.querySelector('.hide-known-issues').addEventListener('click', (e) => {
-    document.querySelectorAll('.violations').forEach(violationTable =>
-        violationTable.classList.add('violations--hide-known-issues'))
-  })
-
-  document.querySelector('.show-all').addEventListener('click', (e) => {
-    document.querySelectorAll('.violations').forEach(violationTable =>
-        violationTable.classList.remove('violations--hide-known-issues', 'violations--hide-non-errors')
-    )
-  })
 })();

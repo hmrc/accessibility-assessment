@@ -35,9 +35,6 @@ html(lang="en")
               dd=tool.version
 
     article
-      button(class='button show-error') Show Only Errors
-      button(class='button hide-known-issues') Hide Known Issues
-      button(class='button show-all') Show All
       h2 Violations
       nav.tabs
         ul
@@ -46,7 +43,7 @@ html(lang="en")
              a(href="#" + tool.techName)= tool.name
       each tool in tools
         div.revealed-by-tab(id=tool.techName)
-          table(id=tool.techName + '-table').violations
+          table(id=tool.techName + 'Table', class='order-column stripe')
             thead
               tr
                 th.path URL Path #[+link('(?)','#url-path')]
@@ -100,7 +97,3 @@ html(lang="en")
                       td.info
                         span.info #{violation.furtherInformation}
     script!=assets.javascript
-
-    script.
-      $('#axe-table').DataTable();
-      $('#vnu-table').DataTable();

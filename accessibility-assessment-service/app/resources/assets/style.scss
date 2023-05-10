@@ -49,18 +49,16 @@ body {
   .alert,
   .code,
   .severity {
-    // 32%
     width: 5%;
   }
 
   .path {
-    // 44%
     width: 12%;
   }
 
   .info,
   .snippet {
-    width:((8%*4+12)/2);// 69%
+    width:((8%*4+12)/2);
 
     pre {
       width: auto;
@@ -70,28 +68,6 @@ body {
 
   .description {
     width: ((8%*4+12)/2);
-  }
-}
-
-.button {
-  margin-right:10px;
-}
-
-.violations--hide-non-errors, .violations--hide-known-issues {
-  .violation--known-info, .violation--known-warning {
-    display: none
-  }
-}
-
-.violations--hide-non-errors {
-  .violation--info, .violations--warning {
-    display: none
-  }
-}
-
-.violations--hide-known-issues {
-  .violation--known-error {
-    display: none
   }
 }
 
@@ -146,6 +122,11 @@ body {
   }
 }
 
+.filter {
+  display: inline-block;
+  padding-right: 20px;
+}
+
 table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -162,6 +143,7 @@ table {
   th, td {
     padding: 10px;
   }
+
 }
 .severity {
   $foreground-red: #942514;
@@ -194,4 +176,10 @@ table {
       background: $background-red;
     }
   }
+}
+
+/* fix for dataTables.net styling issue */
+table.dataTable {
+  margin-top: 20px !important;
+  width: 100% !important;
 }

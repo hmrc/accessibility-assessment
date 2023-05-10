@@ -58,6 +58,7 @@ const includeJs = model => (new Promise((res, rej) => {
 	  contents,
 	  fs.readFileSync(path.join(`${config.assetsDir}`, 'jquery.1.12.2.min.js'), 'utf8'),
 	  fs.readFileSync(path.join(`${config.assetsDir}`, 'jquery.dataTables.1.13.4.min.js'), 'utf8'),
+	  fs.readFileSync(path.join(`${config.assetsDir}`, 'table-filters.js'), 'utf8'),
 	].join('\n\n')
       })
       res(updatedModel)
