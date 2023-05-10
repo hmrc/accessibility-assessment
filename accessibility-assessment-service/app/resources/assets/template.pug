@@ -43,7 +43,7 @@ html(lang="en")
              a(href="#" + tool.techName)= tool.name
       each tool in tools
         div.revealed-by-tab(id=tool.techName)
-          table(id=tool.techName + 'Table', class='order-column hover')
+          table(id=tool.techName + 'Table', class='order-column stripe')
             thead
               tr
                 th.path URL Path #[+link('(?)','#url-path')]
