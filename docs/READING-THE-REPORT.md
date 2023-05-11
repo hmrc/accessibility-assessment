@@ -80,11 +80,11 @@ The further information column aims to give teams additional context to help the
 This column will sometimes link to raised issues with libraries as well as advise teams on particular versions of libraries to upgrade from.
 
 # How to analyse the report
-The generated HTML accessibility report can be quite noisy with lots of information being displayed. A good way to approach addressing the raised issues can be to first look to address any errors that are not known issues. To do this, teams can use the provided filters to ‘Show Only Errors’ and ‘Hide Known Issues’ which will reduce lots of the noise.
+The generated HTML accessibility report can be quite noisy with lots of information being displayed. A good way to approach addressing the raised issues can be to first look to address any errors that are not known issues. To do this, teams can use the provided filters to ‘Hide Known issues’ and ‘Show only errors’  which will reduce lots of the noise. Additionally, the report also provides search functionality to enable users to narrow down the information displayed as well as the ability for the order in which violations are displayed in the report can be changed.
 
 ![The filters available within the generated report](report-filters-available.png)
 
-Teams should work together to look at each reported issue. If you are unsure of an issue raised within the report, reach out to the #community-accessibility channel sharing as much information that is relevant to the issue you are trying to resolve and also link to your report within Jenkins.
+Teams should work together to look at each reported issue. If you are unsure of an issue raised within the report, reach out to the #community-accessibility channel sharing as much information that is relevant to the issue you are trying to resolve and also link to your report within Jenkins. 
 
 Once any errors that are not known issues have been addressed, teams should then ensure that they look through the known issues. Whilst most known issues relate to things that might be outside of your team’s control, this isn’t always the case. Sometimes some of the known issues might be able to be resolved by your team for example by updating to a newer version of a library.
 
