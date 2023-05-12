@@ -4,16 +4,11 @@ $(document).ready(function () {
             pageLength: 100,
         },
     ),
-    vnuTable = $('#vnuTable').DataTable({
-        pageLength: 100,
-        columnDefs: [
-            {
-                target: 1,
-                visible: false,
-                searchable: false,
-            },
-        ],
-    });
+    vnuTable = $('#vnuTable').DataTable(
+        {
+            pageLength: 100,
+        },
+    );
 
     function createCheckboxFilter(elementId, label) {
         return $(`<div class='filter'><label for='${elementId}'>${label}</label><input type='checkbox' id='${elementId}'/></div>`);
