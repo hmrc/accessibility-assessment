@@ -339,6 +339,42 @@ class FiltersSpec extends BaseSpec with Filters with TableDrivenPropertyChecks {
       assert(actualViolations.head.knownIssue.getOrElse("") == "true", ". KnownIssue is not set to true")
     }
 
+    "Mutate axe violation 'Fix all of the following: aria-labelledby attribute cannot be used on a div with no valid role attribute" in new TestSetup {
+      val violations: List[Violation] = List[Violation](
+        defaultViolation.copy(
+          tool = "axe",
+          description =
+            "Fix all of the following: aria-labelledby attribute cannot be used on a div with no valid role attribute.",
+          snippet =
+            """<div class="govuk-accordion__section-content" id="accordion-incorrect-details-content-1" aria-labelledby="accordion-incorrect-details-heading-1">"""
+        )
+      )
+
+      val actualViolations: List[Violation] = applyA11yFiltersFor(violations)
+
+      actualViolations.size            shouldBe 1
+      actualViolations.head.alertLevel shouldBe "alertLevel"
+      assert(actualViolations.head.furtherInformation.isDefined, ". FurtherInformation is not provided")
+      assert(actualViolations.head.knownIssue.getOrElse("") == "true", ". KnownIssue is not set to true")
+    }
+
+    "Mutate vnu violation 'Bad value “until-found” for attribute “hidden” on element “div”" in new TestSetup {
+      val violations: List[Violation] = List[Violation](
+        defaultViolation.copy(
+          tool = "vnu",
+          description = "Bad value “until-found” for attribute “hidden” on element “div”",
+          snippet = """<div class="govuk-accordion__section-content" hidden="until-found">"""
+        )
+      )
+
+      val actualViolations: List[Violation] = applyA11yFiltersFor(violations)
+
+      actualViolations.size            shouldBe 1
+      actualViolations.head.alertLevel shouldBe "alertLevel"
+      assert(actualViolations.head.furtherInformation.isDefined, ". FurtherInformation is not provided")
+      assert(actualViolations.head.knownIssue.getOrElse("") == "true", ". KnownIssue is not set to true")
+    }
+
     "Mutate axe violation 'Fix any of the following: aria-label attribute does not exist or is empty' in autocomplete__menu class" in new TestSetup {
       val violations: List[Violation] = List[Violation](
         defaultViolation.copy(
