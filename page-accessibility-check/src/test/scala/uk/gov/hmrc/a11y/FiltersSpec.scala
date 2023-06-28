@@ -462,5 +462,24 @@ class FiltersSpec extends BaseSpec with Filters with TableDrivenPropertyChecks {
 
       actualViolations.size shouldBe 0
     }
+
+    "Mutate the violation reporting the use of the inputmode attribute, surfaced by vnu" in new TestSetup {
+      val violations: List[Violation] = List[Violation](
+        defaultViolation.copy(
+          tool = "vnu",
+          description =
+            """The “inputmode” attribute is not supported in all browsers. Please be sure to test, and consider using a polyfill.""",
+          snippet =
+            """<input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dateTimeOfArrival.dateOfArrival.day" name="dateTimeOfArrival.dateOfArrival.day" type="text" inputmode="numeric"> <"""
+        )
+      )
+
+      val actualViolations: List[Violation] = applyA11yFiltersFor(violations)
+
+      actualViolations.size                              shouldBe 1
+      actualViolations.head.alertLevel                   shouldBe "alertLevel"
+      actualViolations.head.furtherInformation.isDefined shouldBe true
+      actualViolations.head.knownIssue.isDefined         shouldBe true
+    }
   }
 }
