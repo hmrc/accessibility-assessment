@@ -1,4 +1,5 @@
 {
+  "GHSA-j8xg-fqg3-53r7": "word-wrap: dependency, no risk given how accessibility-assessment is used",
   "GHSA-c2qf-rxjj-qqgw": "semver: dependency, no risk given how accessibility-assessment is used",
   "GHSA-hrpp-h998-j3pp": "qs: devDependency, no risk given our usage",
   "GHSA-9c47-m6qq-7p4h": "json5: devDependency, no risk given our usage",
