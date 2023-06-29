@@ -19,12 +19,12 @@ lazy val pagecheck: Project = (project in file("page-accessibility-check"))
     scalacOptions ++= Seq("-feature"),
     libraryDependencies ++= Dependencies.test ++ Dependencies.compile,
     Test / unmanagedResources / excludeFilter := "*.html",
-    mainClass in run := Some("uk.gov.hmrc.a11y.PageAccessibilityCheck"),
-    mainClass in (Compile, packageBin) := Some("uk.gov.hmrc.a11y.PageAccessibilityCheck"),
-    assemblyJarName in assembly := "page-accessibility-check.jar",
-    assemblyOutputPath in assembly := file(
+    run / mainClass := Some("uk.gov.hmrc.a11y.PageAccessibilityCheck"),
+    Compile / packageBin / mainClass := Some("uk.gov.hmrc.a11y.PageAccessibilityCheck"),
+    assembly / assemblyJarName := "page-accessibility-check.jar",
+    assembly / assemblyOutputPath := file(
       root.base.getAbsolutePath + "/accessibility-assessment-service/app/resources/page-accessibility-check.jar"
     ),
     assembly / test := {},
-    test in Test := Def.sequential(test in Test, assembly in Test).value
+    Test / test := Def.sequential(Test / test, Test / assembly).value
   )

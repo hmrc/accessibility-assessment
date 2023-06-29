@@ -97,6 +97,11 @@ npm install
 npm run test -- --runInBand
 ```
 
+## Updating the filters
+If you're adding, removing or updating any [`page-accessibility-check` filters](page-accessibility-check/src/main/resources/application.conf)
+(eg. to annotate a known issue), you *must* run `sbt test`, which implicitly assembles `page-accessibility-check.jar`.
+You must then commit this jar file along with any other changes.  This is due to current limitations of the build environment.
+
 ## Updating the image
 Most updates can be tested easily by starting the service in your local development environment by executing `node app.js` from the [accessibility-assessment-service/app](accessibility-assessment-service/app/) directory.  However, triggering page assessments requires that you have specific versions of axe-cli and the vnu jar installed and configured appropriately.
 
