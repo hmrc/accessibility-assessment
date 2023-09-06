@@ -55,5 +55,5 @@ RUN   cd ${HOME} \
       && npm run test -- --runInBand
 
 EXPOSE 6010
-
+VOLUME ["/home/seluser/output"]
 CMD ["/bin/bash", "/home/seluser/start.sh"]
