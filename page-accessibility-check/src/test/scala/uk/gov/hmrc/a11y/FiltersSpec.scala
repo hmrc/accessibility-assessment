@@ -481,5 +481,29 @@ class FiltersSpec extends BaseSpec with Filters with TableDrivenPropertyChecks {
       actualViolations.head.furtherInformation.isDefined shouldBe true
       actualViolations.head.knownIssue.isDefined         shouldBe true
     }
+
+    """Mutate the violation reporting the use of async="true" on script tags injected by Google, surfaced by vnu""" in new TestSetup {
+      val violations: List[Violation] = List[Violation](
+        defaultViolation.copy(
+          tool = "vnu",
+          description = """Bad value “true” for attribute “async” on element “script”.""",
+          snippet =
+            """IE]>--> <script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-93XB80XCLF&amp;l=dataLayer&amp;cx=c" nonce=""></scri"""
+        ),
+        defaultViolation.copy(
+          tool = "vnu",
+          description = """Bad value “true” for attribute “async” on element “script”.""",
+          snippet =
+            """<script src="https://www.googleishdomain.com/gtag/js?foo=bar" async="true" nonce="">"""
+        )
+      )
+
+      val actualViolations: List[Violation] = applyA11yFiltersFor(violations)
+
+      actualViolations.size                                  shouldBe 2
+      actualViolations.count(_.alertLevel == "alertLevel")   shouldBe 2
+      actualViolations.count(_.furtherInformation.isDefined) shouldBe 2
+      actualViolations.count(_.knownIssue.isDefined)         shouldBe 2
+    }
   }
 }
