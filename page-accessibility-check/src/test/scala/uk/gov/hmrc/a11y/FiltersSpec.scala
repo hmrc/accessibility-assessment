@@ -493,8 +493,7 @@ class FiltersSpec extends BaseSpec with Filters with TableDrivenPropertyChecks {
         defaultViolation.copy(
           tool = "vnu",
           description = """Bad value “true” for attribute “async” on element “script”.""",
-          snippet =
-            """<script src="https://www.googleishdomain.com/gtag/js?foo=bar" async="true" nonce="">"""
+          snippet = """<script src="https://www.googleishdomain.com/gtag/js?foo=bar" async="true" nonce="">"""
         )
       )
 
@@ -504,6 +503,23 @@ class FiltersSpec extends BaseSpec with Filters with TableDrivenPropertyChecks {
       actualViolations.count(_.alertLevel == "alertLevel")   shouldBe 2
       actualViolations.count(_.furtherInformation.isDefined) shouldBe 2
       actualViolations.count(_.knownIssue.isDefined)         shouldBe 2
+    }
+
+    """Mutate the violation reporting the use of http-equiv="origin-trial" on script tags injected by Google, surfaced by vnu""" in new TestSetup {
+      val violations: List[Violation] = List[Violation](
+        defaultViolation.copy(
+          tool = "vnu",
+          description = """Bad value “origin-trial“ for attribute “http-equiv“ on element “meta“""",
+          snippet = """e.png"> <meta http-equiv="origin-trial" content="Aymqw/dVJPV3//5g4AAA"></head"""
+        )
+      )
+
+      val actualViolations: List[Violation] = applyA11yFiltersFor(violations)
+
+      actualViolations.size                                  shouldBe 1
+      actualViolations.count(_.alertLevel == "alertLevel")   shouldBe 1
+      actualViolations.count(_.furtherInformation.isDefined) shouldBe 1
+      actualViolations.count(_.knownIssue.isDefined)         shouldBe 1
     }
   }
 }
