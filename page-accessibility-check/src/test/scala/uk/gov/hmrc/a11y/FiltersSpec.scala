@@ -509,8 +509,8 @@ class FiltersSpec extends BaseSpec with Filters with TableDrivenPropertyChecks {
       val violations: List[Violation] = List[Violation](
         defaultViolation.copy(
           tool = "vnu",
-          description = """Bad value “origin-trial“ for attribute “http-equiv“ on element “meta“""",
-          snippet = """e.png"> <meta http-equiv="origin-trial" content="Aymqw/dVJPV3//5g4AAA"></head"""
+          description = """Bad value “origin-trial” for attribute “http-equiv” on element “meta”.""",
+          snippet = """e.png"> <meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head"""
         )
       )
 
