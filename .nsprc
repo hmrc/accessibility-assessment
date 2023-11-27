@@ -1,4 +1,6 @@
 {
+  "GHSA-wf5p-g6vw-rhxx": "axios: devDependency, no risk given our usage",
+  "GHSA-hm92-vgmw-qfmx": "chromedriver: devDependency, no risk given our usage",
   "GHSA-j8xg-fqg3-53r7": "word-wrap: dependency, no risk given how accessibility-assessment is used",
   "GHSA-c2qf-rxjj-qqgw": "semver: dependency, no risk given how accessibility-assessment is used",
   "GHSA-hrpp-h998-j3pp": "qs: devDependency, no risk given our usage",
