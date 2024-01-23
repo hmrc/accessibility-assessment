@@ -1,3 +1,5 @@
+:warning: This service has been deprecated and replaced by [accessibility-assessment-extension](https://github.com/hmrc/accessibility-assessment-extension) (which is automatically included with [ui-test-runner](https://github.com/hmrc/ui-test-runner)). Please see the associated [announcement](https://confluence.tools.tax.service.gov.uk/x/KoX0Lw) and [migration guide](https://confluence.tools.tax.service.gov.uk/x/JoPoLw) for further details. :warning:
+
 # accessibility-assessment
 The accessibility-assessment tool is published as a docker image, and runs as a sidecar container to our jenkins agents.  It exposes a REST API for capturing complete web pages (HTML, js, css) which are then assessed with [axe](https://www.deque.com/axe/) and [Nu HTML Checker](https://validator.github.io/validator/).  
 The service then creates a [basic HTML report](docs/READING-THE-REPORT.md) of the violations found which is archived in Jenkins, and in our Management instance of Kibana.
